@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Users',
-    link: '/docs/user/intro',
+    link: 'docs/user/intro',
     Svg: require('@site/static/img/users.svg').default,
     description: (
       <>
@@ -16,7 +16,7 @@ const FeatureList = [
   },
   {
     title: 'Managers',
-    link: '/docs/manager/intro',
+    link: 'docs/manager/intro',
     Svg: require('@site/static/img/managers.svg').default,
     description: (
       <>
@@ -27,7 +27,7 @@ const FeatureList = [
   },
   {
     title: 'Developers',
-    link: '/docs/developer/intro',
+    link: 'docs/developer/intro',
     Svg: require('@site/static/img/developers.svg').default,
     description: (
       <>
