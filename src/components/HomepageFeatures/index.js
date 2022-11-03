@@ -6,7 +6,7 @@ const FeatureList = [
   {
     title: 'Users',
     link: '/docs/user/intro',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/users.svg').default,
     description: (
       <>
         Chimera Dashboard users can get started quickly as it was designed 
@@ -17,7 +17,7 @@ const FeatureList = [
   {
     title: 'Managers',
     link: '/docs/manager/intro',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/managers.svg').default,
     description: (
       <>
         Chimera allows you to control access to data in your dashboard with
@@ -28,7 +28,7 @@ const FeatureList = [
   {
     title: 'Developers',
     link: '/docs/developer/intro',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/developers.svg').default,
     description: (
       <>
         Chimera was designed to be easily installed and

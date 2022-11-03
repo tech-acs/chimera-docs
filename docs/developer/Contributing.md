@@ -5,10 +5,10 @@ sidebar_position: 8
 # Contributing
 
 
-## How to Contribute
+## How to contribute
 
 
-## Coding Standards
+## Coding standards
 
 
 ## Licence

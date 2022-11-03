@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Chimera Dashboard Starter Kit',
+  title: 'Dashboard Starter Kit',
   tagline: 'For census and surveys, large and small',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
@@ -83,10 +83,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Chimera',
+        title: 'Home',
         logo: {
-          alt: 'Chimera Dashboard Starter Kit',
-          src: 'img/logo.svg',
+          alt: 'Dashboard Starter Kit',
+          src: 'img/logo.png',
         },
         items: [
           // {

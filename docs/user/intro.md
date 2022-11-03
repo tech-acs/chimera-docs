@@ -16,6 +16,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique facilis
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique facilisis nunc eget dictum. Proin et porttitor enim. Proin elementum dolor bibendum, tempor turpis aliquet, consequat dolor. Nulla euismod turpis eu erat interdum dictum. Donec at libero elementum, sagittis risus eu, elementum leo. Donec bibendum elementum vehicula. Integer erat justo, tempor ut cursus et, vehicula vitae lorem. Donec malesuada nisl eros, quis dapibus erat sodales sit amet. In sed erat porta, posuere tellus vitae, blandit purus.
 
-## Core Concepts
+## Core concepts
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique facilisis nunc eget dictum. Proin et porttitor enim. Proin elementum dolor bibendum, tempor turpis aliquet, consequat dolor. Nulla euismod turpis eu erat interdum dictum. Donec at libero elementum, sagittis risus eu, elementum leo. Donec bibendum elementum vehicula. Integer erat justo, tempor ut cursus et, vehicula vitae lorem. Donec malesuada nisl eros, quis dapibus erat sodales sit amet. In sed erat porta, posuere tellus vitae, blandit purus.
