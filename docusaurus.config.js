@@ -9,7 +9,7 @@ const config = {
   title: 'Dashboard Starter Kit',
   tagline: 'For census and surveys, large and small',
   url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  baseUrl: '/chimera-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
