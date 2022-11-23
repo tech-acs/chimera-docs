@@ -37,24 +37,35 @@ The following are other environment variables you can set to affect various aspe
 - SECURE=false
     
     set this to true or false depending on whether you have https enabled on your dashboard web server (default false)
+
 - INDICATORS_PER_PAGE=2
 
     set this to an integer number which controls the number of indicators shown per page (default 2)
+
+- EMAILING_ENABLED
+
+    set this to true if you intend to send emails through the system (default false)
+
 - ENFORCE_2FA=false
     
     set this to true to require users to enable and use two factor authentication (default false) 
+
 - INVITATION_TTL_HOURS=72
     
     set this to the number of hours you want user registration links to be valid for (default 72)
+
 - RECORDS_PER_PAGE=20
     
     set this to an integer number which controls the number of rows shown in various tables of the dashboard (default 20)
+
 - MAP_CENTER_LAT=9.005401
     
     set this to the latitude of the map which is first panned into view when map is loaded (default 9.005401)
+
 - MAP_CENTER_LON=38.763611
     
     set this to the longitude of the map which is first panned into view when map is loaded (default 38.763611)
+
 - CACHE_ENABLED=false
     
     set this to true or false to enable data caching (default false)
