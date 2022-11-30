@@ -50,8 +50,48 @@ Please note that the order of appearance of the area entries is important. It si
 
 ## Area importation
 
-Once you define your area hierarchy, the next step is to actually import your areas into the system so that it can be used for filtering down various indicators and can also be used in maps.
+Once you define your area hierarchy, the next step is to actually import your areas into the system so that it can be used for filtering various indicators, creating maps, etc.
+
+You have the option of importing the data from two file formats:
+
+- **Shapefiles (preferred)**
+
+    Shapefile is the preferred file format for importing areas into your dashboard because it contains both the spatial data and the area metadata (names and codes).
+
+    When importing the various levels via shapefiles, the dashboard will take care of associating them with each other (creates the parent-child relationship) by matching them spatially. Therefore, it is important to make sure that all your shapefiles are consistent and that are spatially contained by one another. 
+    
+    The algorithm has a threshold of about 70% minimum containment that it uses to pair parent-child areas. If you choose to "simplify" you shapefiles, make sure that you do not over do it. You can overlay them to check that lower levels are still contained (at least 70%) by their immediate higher level area.
+
+    ![Importing areas from shapefile](/img/developer/building-your-dashboard/importing-area-hierarchy-from-shapefile.png)
+
+- **Spreadsheets (.csv or .xlsx)**
+
+    You can also import your areas via a spreadsheet format such as csv or Excel but here you will not have the maps and therefore can have map based indicators in you dashboard.
+
+    When importing, you can use the interface to map which columns of your spreadsheet hold which area level (name and code) and are also able to apply zero padding to your codes to match how they appear in your source data (questionnaire).
+
+    ![Importing areas from csv](/img/developer/building-your-dashboard/importing-area-hierarchy-from-csv.png)
+
+    The imported data should look something like the following
+
+    ![Imported area hierarchy](/img/developer/building-your-dashboard/imported-area-hierarchy.png)
+
+> The example spreadsheet data for South Africa, seen above, was sourced from [The Humanitarian Data Exchange](https://data.humdata.org/)
+
+
 
 ## Reference value importation
 
 What we generally refer to as reference values are concepts such as 'expected values' and 'target values'. These are used for comparing your actual data against so that you have some frame of reference to better understand the data/indicator your are viewing.
+
+To import reference values, you will need to have the data in an Excel or CSV file and it needs to be at the lowest area hierarchy level (usually EA).
+
+The file needs to have at least two columns. One for the code of your lowest area hierarchy and another for the value of the reference value you are importing. It is common to have multiple columns, each named by the reference value they represent, in the same spreadsheet.
+
+![Sample reference values CSV file](/img/developer/building-your-dashboard/reference-value-spreadsheet.png)
+
+The following screenshot depicts how one would do mapping of columns to import reference values from the above CSV file.
+
+You can see that the female total population (F_TL), male total population (M_TL), total population (T_TL) and total population aged 80+ (T_80PLUS) are being imported here. Also note that since the data is at the last area hierarchy level, and as it is population data, the "Is additive" option has been selected and therefore the data will be summed and saved for the respective higher level areas.
+
+![Importing reference values from CSV file](/img/developer/building-your-dashboard/importing-reference-values.png)
