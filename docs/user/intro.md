@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
-![](/img/overview.png)
+![](/img/user/overview.png)
 
 ## Background
 

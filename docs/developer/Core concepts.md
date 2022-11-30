@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+slug: /core-concepts
 ---
 
 # Core concepts

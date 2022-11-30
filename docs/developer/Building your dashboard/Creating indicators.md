@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+slug: ../building-your-dashboard/creating-indicators
 ---
 
 # Creating indicators

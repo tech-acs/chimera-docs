@@ -4,4 +4,4 @@ sidebar_position: 3
 
 # Localization
 
-![Multilingual fields](/img/screenshots/multilanguage_fields.png)
+![Multilingual fields](/img/developer/advanced-topics/multilanguage-fields.png)

@@ -1,7 +1,6 @@
 ---
-
 sidebar_position: 1
-
+slug: ../access-control/roles
 ---
 
 # Roles
@@ -17,7 +16,7 @@ Creating roles is only available to Dashboard Managers. You should already be lo
 
 You need to first head to the 'Management' menu (see screenshot below) in your dashboard:
 
-![Management menu](/img/screenshots/management_menu.png)
+![Management menu](/img/manager/access-control/management-menu.png)
 
 ## Creating a role
 
@@ -27,12 +26,12 @@ The steps to create a role are as follows: navigate to the role management page,
 1. Go to the 'Access control' section of the management menu
 2. Click on the 'Roles' option
 
-![Roles options](/img/manage/access_control/roles/roles_1.png)
+![Roles options](/img/manager/access-control/roles/roles_1.png)
 
 3. The role management page will be displayed. Enter the name of the role you want to create in the 'Name' field and click on the 'Create' button.
 
 
-![Roles management](/img/manage/access_control/roles/roles_2.png)
+![Roles management](/img/manager/access-control/roles/roles_2.png)
 
 ## Assigning view permission to roles
 

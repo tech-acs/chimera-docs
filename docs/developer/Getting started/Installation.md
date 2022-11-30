@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+slug: ../getting-started/installation
 ---
 
 # Installation
@@ -7,6 +8,17 @@ sidebar_position: 4
 As the Dashboard Starter Kit is built for Laravel, you will first have to create a fresh Laravel project.
 
 Please refer to the Laravel documentation [here](https://laravel.com/docs/installation) on how to go about this.
+
+:::info
+
+Here is the **TLDR** version of a Laravel project creation
+
+After you have installed PHP and Composer, you may create a new Laravel project via the Composer `create-project` command:
+
+```
+composer create-project laravel/laravel my-dashboard
+```
+:::
 
 Once you have created the project, you may use Composer to install the Kit into your new Laravel project:
 

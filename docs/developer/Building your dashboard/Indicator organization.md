@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+slug: ../building-your-dashboard/indicator-organization
 ---
 
 # Indicator organization
@@ -15,4 +16,4 @@ There you can create a page by providing a title, description and published stat
 ## Indicator ordering (per page)
 By using the edit page feature, you can also control the display order of indicators included within a page.
 
-![Indicator ordering](/img/screenshots/indicator_ordering.png)
+![Indicator ordering](/img/developer/building-your-dashboard/indicator-ordering.png)
