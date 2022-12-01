@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 slug: ../building-your-dashboard/creating-indicators
 ---
 
@@ -78,7 +78,7 @@ The default state of indicators when they are created on the command line is to 
 ## Implementing generated indicators
 There are three possible versions your generated indicator file might be in.
 
-- Empty
+- **Empty**
 
 If you choose not to use indicator templates and also opt out of the inclusion of sample code during the generation, you will end up with the following file. 
 
@@ -97,7 +97,7 @@ class BirthRate extends Chart
 ```
 If you publish it and see the results on the destination page, you will see an empty graph that displays a standard text stating the lack of data for the indicator.
 
-- With sample code
+- **With sample code**
 
 If you choose to include sample code during the generation of the indicator, the resulting file will have three methods implemented (overriding the base class implementations) inside the class. 
 
@@ -105,6 +105,8 @@ If you previewed it, you would see something like the following
 
 ![Preview of indicator with sample code](/img/developer/building-your-dashboard/preview-of-indicator-with-sample-code.png)
 
-- From a template
+- **From a template**
 
 If you select an existing template during the generation of the indicator, the resulting file will have a "standard" implementation of the said indicator. In this scenario, you just need to replace the getData() method with your own implementation so that you are displaying actual data from your own questionnaire (data source).
+
+![Preview of indicator with sample code](/img/developer/building-your-dashboard/preview-of-indicator-from-template.png)

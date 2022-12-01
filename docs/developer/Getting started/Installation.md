@@ -26,7 +26,7 @@ Once you have created the project, you may use Composer to install the Kit into 
 composer require uneca/census-dashboard-starter-kit
 ```
 
-After installing the package, you may execute the chimera:install Artisan command. This command will install a suite of tools and features that enable you to build
+After installing the package, you may execute the chimera:install artisan command. This command will install a suite of tools and features that enable you to build
 a modern census/survey dashboard.
 
 ```
@@ -43,7 +43,7 @@ Dashboard Starter Kit should only be installed into new Laravel applications. At
 
 Now that you have scaffolded your dashboard application, the next step is to edit your application's .env configuration file and put in the correct settings for your database and other settings.
 
-To proceed, you need to first create a PostgreSQL database and add the details to the .env file. Again please referr to the Laravel documentation on how to configure a database connection.
+To proceed, you need to first create a PostgreSQL database and add the details to the .env file. Again please refer to the Laravel documentation on how to configure a database connection.
 
 Once you have done so, you are now ready to run the database migrations:
 

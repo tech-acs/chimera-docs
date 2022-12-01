@@ -1,11 +1,11 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 slug: ../building-your-dashboard/indicator-organization
 ---
 
 # Indicator organization
 
-Indicators can be organized into logical sets called pages. Pages, if published will show up as menu items.
+Indicators can be organized into logical sets called pages. Pages, if published will show up as menu item in the top navigation bar. You can add an indicator to multiple pages.
 
 ## Creating pages
 
