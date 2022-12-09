@@ -48,6 +48,10 @@ Please note that the order of appearance of the area entries is important. It si
 
 ![Management menu](/img/developer/building-your-dashboard/area-hierarchy.png)
 
+## Area columns mapping
+
+
+
 ## Area importation
 
 Once you define your area hierarchy, the next step is to actually import your areas into the system so that it can be used for filtering various indicators, creating maps, etc.

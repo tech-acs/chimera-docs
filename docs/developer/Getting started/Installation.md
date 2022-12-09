@@ -23,7 +23,7 @@ composer create-project laravel/laravel my-dashboard
 Once you have created the project, you may use Composer to install the Kit into your new Laravel project:
 
 ```
-composer require uneca/census-dashboard-starter-kit
+composer require uneca/dashboard-starter-kit
 ```
 
 After installing the package, you may execute the chimera:install artisan command. This command will install a suite of tools and features that enable you to build
