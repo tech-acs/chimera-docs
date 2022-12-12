@@ -43,9 +43,20 @@ Dashboard Starter Kit should only be installed into new Laravel applications. At
 
 Now that you have scaffolded your dashboard application, the next step is to edit your application's .env configuration file and put in the correct settings for your database and other settings.
 
-To proceed, you need to first create a PostgreSQL database and add the details to the .env file. Again please refer to the Laravel documentation on how to configure a database connection.
+To proceed, you need to first create a PostgreSQL database and add the details to the .env file (see below). Again please refer to the Laravel documentation on how to configure a database connection.
 
-Once you have done so, you are now ready to run the database migrations:
+```
+DB_CONNECTION=pgsql
+DB_HOST=your database host name or ip address
+DB_PORT=your database port (5432 is the default port for postgres)
+DB_DATABASE=your database name
+DB_USERNAME=your database username
+DB_PASSWORD=your database password
+```
+
+For a complete list of all environment variables you can configure, please refer to the [Configuration](/docs/developer/getting-started/configuration) section.
+
+Once you have edited your .env file, you are now ready to run the database migrations:
 
 ```
 php artisan migrate
