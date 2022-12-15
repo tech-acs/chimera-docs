@@ -55,6 +55,10 @@ The following are other environment variables you can set to affect various aspe
     
     set this to the number of hours you want user registration links to be valid for (default 72)
 
+- REQUIRE_ACCOUNT_APPROVAL=false
+
+    set this to true to require that all accounts get approval from dashboard manager before they can be used (default false)
+
 - RECORDS_PER_PAGE=20
     
     set this to an integer number which controls the number of rows shown in various tables of the dashboard (default 20)

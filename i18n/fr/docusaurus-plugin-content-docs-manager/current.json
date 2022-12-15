@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.Access control": {
+    "message": "Access control",
+    "description": "The label for category Access control in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Dashboard elements": {
+    "message": "Dashboard elements",
+    "description": "The label for category Dashboard elements in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Importing data": {
+    "message": "Importing data",
+    "description": "The label for category Importing data in sidebar docsSidebar"
+  }
+}

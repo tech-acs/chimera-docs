@@ -1,0 +1,30 @@
+{
+  "version.label": {
+    "message": "Suivant",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.Getting started": {
+    "message": "Commencer",
+    "description": "The label for category Getting started in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Building your dashboard": {
+    "message": "Building your dashboard",
+    "description": "The label for category Building your dashboard in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Deployment guide": {
+    "message": "Deployment guide",
+    "description": "The label for category Deployment guide in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Migration guides": {
+    "message": "Migration guides",
+    "description": "The label for category Migration guides in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Advanced topics": {
+    "message": "Advanced topics",
+    "description": "The label for category Advanced topics in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Support": {
+    "message": "Support",
+    "description": "The label for category Support in sidebar docsSidebar"
+  }
+}

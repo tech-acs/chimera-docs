@@ -1,39 +1,40 @@
 import React from 'react';
 import clsx from 'clsx';
+import Translate from '@docusaurus/Translate';
 import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Users',
+    title: <Translate description="homepage users section title">Users</Translate>,
     link: 'docs/user/intro',
     Svg: require('@site/static/img/users.svg').default,
     description: (
-      <>
-        Chimera Dashboard users can get started quickly as it was designed 
+      <Translate description="homepage users section blurb">
+        Dashboard users can get started quickly as it was designed 
         with ease of use in mind.
-      </>
+      </Translate>
     ),
   },
   {
-    title: 'Managers',
+    title: <Translate description="homepage managers section title">Managers</Translate>,
     link: 'docs/manager/intro',
     Svg: require('@site/static/img/managers.svg').default,
     description: (
-      <>
-        Chimera allows you to control access to data in your dashboard with
+      <Translate description="homepage managers section blurb">
+        Dashboard Starter Kit allows you to control access to data in your dashboard with
         ease and flexibility.
-      </>
+      </Translate>
     ),
   },
   {
-    title: 'Developers',
+    title: <Translate description="homepage developers section title">Developers</Translate>,
     link: 'docs/developer/intro',
     Svg: require('@site/static/img/developers.svg').default,
     description: (
-      <>
-        Chimera was designed to be easily installed and
+      <Translate description="homepage developers section blurb">
+        Dashboard Starter Kit was designed to be easily installed and
         used to make managing your census or survey easy.
-      </>
+      </Translate>
     ),
   },
 ];

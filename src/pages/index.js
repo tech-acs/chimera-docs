@@ -4,7 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
+import Translate from '@docusaurus/Translate';
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -18,7 +18,9 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="#">
-            Intro video - 5min ⏱️
+              <Translate description="homepage intro button">
+                Intro video - 5min ⏱️
+              </Translate>
           </Link>
         </div>
       </div>
@@ -30,8 +32,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={siteConfig.title}
+      description="Dashboard Starter Kit documentation">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

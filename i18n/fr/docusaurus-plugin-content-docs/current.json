@@ -1,0 +1,18 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.User Interface": {
+    "message": "User Interface",
+    "description": "The label for category User Interface in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Dashboard components": {
+    "message": "Dashboard components",
+    "description": "The label for category Dashboard components in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Advanced": {
+    "message": "Advanced",
+    "description": "The label for category Advanced in sidebar docsSidebar"
+  }
+}
