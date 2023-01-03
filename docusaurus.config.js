@@ -89,7 +89,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Home',
+        title: 'Docs',
         logo: {
           alt: 'Dashboard Starter Kit',
           src: 'img/logo.png',
