@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkchimera_docs_use=self.webpackChunkchimera_docs_use||[]).push([[6373],{8049:s=>{s.exports=JSON.parse('{"label":"docusaurus","permalink":"/chimera-docs/blog/tags/docusaurus","allTagsPath":"/chimera-docs/blog/tags","count":4}')}}]);

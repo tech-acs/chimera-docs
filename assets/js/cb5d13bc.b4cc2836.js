@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkchimera_docs_use=self.webpackChunkchimera_docs_use||[]).push([[4690],{8214:a=>{a.exports=JSON.parse('{"label":"hola","permalink":"/chimera-docs/blog/tags/hola","allTagsPath":"/chimera-docs/blog/tags","count":1}')}}]);

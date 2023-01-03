@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Dashboard Starter Kit Blog</title>
+        <link>https://your-docusaurus-test-site.com/chimera-docs/fr/blog</link>
+        <description>Dashboard Starter Kit Blog</description>
+        <lastBuildDate>Thu, 05 Jan 2023 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>fr</language>
+        <item>
+            <title><![CDATA[Announcing the release of Dashboard-Starter-Kit]]></title>
+            <link>https://your-docusaurus-test-site.com/chimera-docs/fr/blog/announcing-dashboard-starter-kit</link>
+            <guid>announcing-dashboard-starter-kit</guid>
+            <pubDate>Thu, 05 Jan 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Dashboard Starter Kit is a beautifully designed Laravel package that provides a good starting point for your next census or survey management dashboard.]]></description>
+            <content:encoded><![CDATA[<p>Dashboard Starter Kit is a beautifully designed Laravel package that provides a good starting point for your next census or survey management dashboard.</p><p>It helps you monitor and visualize your census or survey exercises and empowers you to take action with data-driven insights.</p><p>Depending on your data source, it is easy enough for you to set up on your own. Just follow our richly illustrated documentation and you will surely be
+able to set it up in no time!</p><p>Best of all, it is completely FREE and open source.</p>]]></content:encoded>
+            <category>dashboard</category>
+            <category>census</category>
+            <category>survey</category>
+            <category>uneca</category>
+        </item>
+    </channel>
+</rss>

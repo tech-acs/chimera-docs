@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkchimera_docs_use=self.webpackChunkchimera_docs_use||[]).push([[2535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Announcing the release of Dashboard-Starter-Kit","permalink":"/chimera-docs/blog/announcing-dashboard-starter-kit"}]}')}}]);
