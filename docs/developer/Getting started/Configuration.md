@@ -71,6 +71,13 @@ The following are other environment variables you can set to affect various aspe
     
     set this to the longitude of the map which is first panned into view when map is loaded (default 38.763611)
 
+- IGNORE_ORPHAN_AREAS
+
+    this relates to importing areas from shapefiles. In that process, areas in one level are automatically linked with areas in
+    the previous level by using spatial queries. If your shapefiles are not exact, it might happen that an area fails to find a
+    containing or parent area. In such cases, set the value of this constant to true to instruct the importer to ignore (and continue)
+    areas that are orphans (default false)
+
 - CACHE_ENABLED=false
     
     set this to true or false to enable data caching (default false)

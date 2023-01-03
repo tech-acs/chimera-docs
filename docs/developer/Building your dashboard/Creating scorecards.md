@@ -30,6 +30,10 @@ You have a high degree of freedom on how you choose to code your scorecard as lo
 
     by default, this is set to 0 but you can set it to any integer (signed) value to depict the delta between the main value and some reference value.
 
+- $this->unit
+
+    by default, this is set to % and is shown as a unit for your delta (diff). You can override it to be any other unit or you can also set it to be an empty string.
+
 - $this->value
 
     by default, this is set to the string value 'NA' but you are expected to set it to the value you want displayed on the scorecard. You will probably have to run some database queries to calculate that value.

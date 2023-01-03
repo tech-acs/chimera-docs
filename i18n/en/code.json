@@ -12,19 +12,19 @@
     "description": "homepage user section blurb"
   },
   "Managers": {
-    "message": "Gestionnaires",
+    "message": "Managers",
     "description": "homepage managers section title"
   },
   "Dashboard Starter Kit allows you to control access to data in your dashboard with ease and flexibility.": {
-    "message": "Le kit de démarrage du tableau de bord vous permet de contrôler l'accès aux données de votre tableau de bord avec facilité et flexibilité.",
+    "message": "Dashboard Starter Kit allows you to control access to data in your dashboard with ease and flexibility.",
     "description": "homepage managers section blurb"
   },
   "Developers": {
-    "message": "Développeurs",
+    "message": "Developers",
     "description": "homepage developers section title"
   },
   "Dashboard Starter Kit was designed to be easily installed and used to make managing your census or survey easy.": {
-    "message": "Le kit de démarrage du tableau de bord a été conçu pour être facilement installé et utilisé pour faciliter la gestion de votre recensement ou de votre enquête.",
+    "message": "Dashboard Starter Kit was designed to be easily installed and used to make managing your census or survey easy.",
     "description": "homepage developers section blurb"
   },
   "theme.ErrorPageContent.title": {

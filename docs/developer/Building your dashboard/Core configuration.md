@@ -48,10 +48,6 @@ Please note that the order of appearance of the area entries is important. It si
 
 ![Management menu](/img/developer/building-your-dashboard/area-hierarchy.png)
 
-## Area columns mapping
-
-
-
 ## Area importation
 
 Once you define your area hierarchy, the next step is to actually import your areas into the system so that it can be used for filtering various indicators, creating maps, etc.
@@ -82,6 +78,8 @@ You have the option of importing the data from two file formats:
 
 > The example spreadsheet data for South Africa, seen above, was sourced from [The Humanitarian Data Exchange](https://data.humdata.org/)
 
+When the process has completed, you will receive a notification. If the importation was successful, you will find the path column formula in the notification message, which you can use on the same spreadsheet file to 
+generate a new "path" column which will be used to uniquely identify the areas and which is also required when you import reference values.
 
 
 ## Reference value importation
@@ -96,6 +94,6 @@ The file needs to have at least two columns. One for the code of your lowest are
 
 The following screenshot depicts how one would do mapping of columns to import reference values from the above CSV file.
 
-You can see that the female total population (F_TL), male total population (M_TL), total population (T_TL) and total population aged 80+ (T_80PLUS) are being imported here. Also note that since the data is at the last area hierarchy level, and as it is population data, the "Is additive" option has been selected and therefore the data will be summed and saved for the respective higher level areas.
+You can see that the number of households (number_of_hh) and population are being imported here. Also note that since the data is at the last area hierarchy level, and as it is population data, the "Is additive" option has been selected and therefore the data will be summed and saved for the respective higher level areas. We are also selecting the column containing the paths we have generated after having imported the areas, in an earlier step. It is used to join the reference values with their respective areas.
 
 ![Importing reference values from CSV file](/img/developer/building-your-dashboard/importing-reference-values.png)

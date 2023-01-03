@@ -20,7 +20,7 @@ composer create-project laravel/laravel my-dashboard
 ```
 :::
 
-Once you have created the project, you may use Composer to install the Kit into your new Laravel project:
+Once you have created the project, you may use composer to install the starter kit into your new Laravel project:
 
 ```
 composer require uneca/dashboard-starter-kit
@@ -41,7 +41,7 @@ Dashboard Starter Kit should only be installed into new Laravel applications. At
 
 :::
 
-Now that you have scaffolded your dashboard application, the next step is to edit your application's .env configuration file and put in the correct settings for your database and other settings.
+Now that you have scaffolded your dashboard application, the next step is to edit your application's .env configuration file and put in the correct settings for your database and other relevant settings.
 
 To proceed, you need to first create a PostgreSQL database and add the details to the .env file (see below). Again please refer to the Laravel documentation on how to configure a database connection.
 
