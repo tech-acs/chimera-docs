@@ -6,5 +6,85 @@ sidebar_position: 2
 
 ## Caching
 
-The Dashboard Starter Kit comes with a complete caching strategy/plan built-in.
+The Dashboard Starter Kit comes with a complete caching strategy built-in.
 
+Caching is not enabled by default and to enable it, you must set CACHE_ENABLED to *true* in your .env file as documented in the [Configuration](/docs/developer/getting-started/configuration#dashboard-features) section.
+
+Once caching is enabled, every published indicator, scorecard, case stat and map indicator will be cached for a set amount of time that is determined by the CACHE_TTL_SECONDS setting in your .env file. The default value of the caching time is **one hour**.
+
+You will most likely want to use your own caching strategy that is appropriate to your data size and other needs. You will therefore need to schedule tasks to update these caches regularly. This is achieved by using the ```chimera:cache``` group of commands. You can run them manually as such but you should schedule them using Laravel's scheduled tasks.
+```
+php artisan chimera:cache-indicators
+php artisan chimera:cache-scorecards
+php artisan chimera:cache-mapindicators
+```
+
+### chimera:cache-indicators
+
+The command has three options which you can use to control how caching happens
+
+- *max-level* : this option, when passed, will control the level depth of caching that will occur for indicators. By default, only national and first area levels will be cached. Accepts a number between 1 and the total number of area hierarchies you have
+
+- *questionnaire* : this option can be used to update the cache of indicators that belong to that specific questionnaire. By default, indicators across all questionnaires will be updated
+
+- *tag* : this option, when passed, will specifically target indicators that have been assigned the given tag, excluding all other untagged indicators
+
+Example: the first command would update all indicators (published and untagged), the second will update all indicators (published and untagged) within the enumeration questionnaire and the third one will update indicators that have the 'priority' tag
+
+```
+php artisan chimera:cache-indicators
+php artisan chimera:cache-indicators --questionnaire=enumeration
+php artisan chimera:cache-indicators --tag=priority
+```
+
+:::info
+You can manage the tag list by editing the tags key under the cache chimera config
+
+Example (in file config\chimera.php):
+```php
+'cache' => [
+    'enabled' => env('CACHE_ENABLED', false),
+    'tags' => ['priority', 'secondary'],
+],
+```
+then, when editing indicators you will see a dropdown named 'Cache Tags' which you can use to assign one of the tags you have set in the chimera config to each of your indicators. By default, indicators will have no assigned tag and you do not need to assign tags for indicators you 
+do not want to target specifically. 
+:::
+
+
+### chimera:cache-scorecards
+
+The command has two options which you can include to control how caching happens
+
+- *questionnaire* : this option can be used to update the cache of scorecards that belong to that specific questionnaire. By default, scorecards across all questionnaires will be updated
+
+
+As it is not practical to update the cache manually on the command line, you will need to schedule the chimera:cache artisan command.
+For details, please refer to the [Task Scheduling](https://laravel.com/docs/9.x/scheduling#scheduling-artisan-commands) section of the Laravel documentation.
+
+Basically, you add the following type of code to the schedule() method of your ```App\Console\Kernel``` class file
+
+```php
+$schedule->command('chimera:cache --questionnaire=enumeration')->everySixHours();
+```
+
+## Cache clearing
+
+If, for some reason, you need to clear cached data, you can use the ```chimera:cache-clear``` command. It has two options
+
+- *questionnaire* : this option can be used to clear the cache of all items stored under the given questionnaire
+
+- *type* : this option can be used to clear specific types of cached data. Possible values for this option are: *indicators, scorecards, casestats or mapindicators*
+
+:::danger
+
+Executing the cache-clear command without any options will clear the cache of everything! It will remove all entries from the cache. Consider this carefully before executing the command.
+:::
+
+## Cached data time stamp
+
+When caching is enabled, a small, faded rubber stamp icon will appear somewhere over each indicator, scorecard and case stats table.
+
+When hovered over, it will display the time the data being displayed was cached at.
+
+![Cache time stamp display](/img/developer/advanced-topics/cache-timestamp-icon.png)
