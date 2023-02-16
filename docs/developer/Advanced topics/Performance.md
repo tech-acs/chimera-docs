@@ -44,6 +44,7 @@ Example (in file config\chimera.php):
 ```php
 'cache' => [
     'enabled' => env('CACHE_ENABLED', false),
+    'ttl' => env('CACHE_TTL_SECONDS', 60 * 60),
     'tags' => ['priority', 'secondary'],
 ],
 ```

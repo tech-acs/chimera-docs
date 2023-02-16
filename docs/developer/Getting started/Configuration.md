@@ -35,6 +35,18 @@ You also need to set up the mail server details if you have access to the Intern
 
 ### Dashboard features
 The following are other environment variables you can set to affect various aspects of the dashboard. 
+- APP_OWNER_NAME=ECA
+
+    set this to the organization that owns the dashboard. Used in the footer displayed across all pages (default ECA)
+
+- APP_OWNER_URL=#
+
+    set this to the URL (website) of the organization that owns the dashboard. Used in the footer displayed across all pages (default #)
+
+- APP_TIMEZONE=UTC
+
+    set this to the timezone of where the census/survey exercise is taking place (default UTC)
+
 - SECURE=false
     
     set this to true or false depending on whether you have https enabled on your dashboard web server (default false)
@@ -81,3 +93,7 @@ The following are other environment variables you can set to affect various aspe
 - CACHE_ENABLED=false
     
     set this to true or false to enable data caching (default false)
+
+- CACHE_TTL_SECONDS=3600
+
+    set this to the number of seconds that you want database query results to be cached. This has effect only if CACHE_ENABLED is set to true (default 60 * 60)

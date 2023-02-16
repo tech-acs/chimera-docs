@@ -74,6 +74,17 @@ npm run dev
 npm run build
 ```
 
+At this point, you are ready to start your server, whatever that may be (artisan serve command, nginx, WAMP, IIS, etc) and navigate to the web address where you will see the landing page
+
+The quickest way would be to run the built-in artisan web server like so,
+
+```
+php artisan serve
+```
+Assuming everything goes well, you should be able to navigate to *http://localhost:8000* and see the landing page
+
+![Landing page](/img/developer/landing.png)
+
 Finally you can run the adminify command to create a _Dashboard Manager_ account with which you can access your new dashboard.
 
 ```

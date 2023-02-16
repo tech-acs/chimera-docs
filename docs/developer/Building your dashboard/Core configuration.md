@@ -56,17 +56,17 @@ You have the option of importing the data from two file formats:
 
 - **Shapefiles (preferred)**
 
-    Shapefile is the preferred file format for importing areas into your dashboard because it contains both the spatial data and the area metadata (names and codes).
+    Shapefile (.shp, .shx and .dbf) is the preferred file format for importing areas into your dashboard because it contains both the spatial data and the area metadata (names and codes).
 
-    When importing the various levels via shapefiles, the dashboard will take care of associating them with each other (creates the parent-child relationship) by matching them spatially. Therefore, it is important to make sure that all your shapefiles are consistent and that are spatially contained by one another. 
+    When importing the various levels via shapefiles, the dashboard will take care of associating them with each other (creates the parent-child relationship) by matching them **spatially**. Therefore, it is important to make sure that all your shapefiles are consistent and that they are **spatially** contained by one another. 
     
     The algorithm has a threshold of about 70% minimum containment that it uses to pair parent-child areas. If you choose to "simplify" you shapefiles, make sure that you do not over do it. You can overlay them to check that lower levels are still contained (at least 70%) by their immediate higher level area.
 
     ![Importing areas from shapefile](/img/developer/building-your-dashboard/importing-area-hierarchy-from-shapefile.png)
 
-- **Spreadsheets (.csv or .xlsx)**
+- **Spreadsheets (.csv)**
 
-    You can also import your areas via a spreadsheet format such as csv or Excel but here you will not have the maps and therefore can have map based indicators in you dashboard.
+    You can also import your areas via a csv file but here you will not have the maps and therefore can not have map based indicators in you dashboard.
 
     When importing, you can use the interface to map which columns of your spreadsheet hold which area level (name and code) and are also able to apply zero padding to your codes to match how they appear in your source data (questionnaire).
 
@@ -81,6 +81,17 @@ You have the option of importing the data from two file formats:
 When the process has completed, you will receive a notification. If the importation was successful, you will find the path column formula in the notification message, which you can use on the same spreadsheet file to 
 generate a new "path" column which will be used to uniquely identify the areas and which is also required when you import reference values.
 
+:::caution
+
+You must make sure that your area codes in the csv or shapefiles match your codes from the database. If they need zero padding, the csv importer can help you with that but you will have to apply the zero-padding to the shapefiles yourself. If they also need concatenation, make sure you take care of that before attempting to import them.
+
+:::
+
+:::tip
+
+In case you have already imported your areas (EA Frame) via a csv file, you can then also import your shapefile to augument them with spatial data. Make sure the codes in the shapefiles match the ones you have already imported in the csv file.
+
+:::
 
 ## Reference value importation
 
