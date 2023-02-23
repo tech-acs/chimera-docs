@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+slug: ../deployment-guide/migrating-data
 ---
 
 # Migrating data

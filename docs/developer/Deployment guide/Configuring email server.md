@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+slug: ../deployment-guide/configuring-email-server
 ---
 
 # Configuring email server

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 8
+sidebar_position: 9
 slug: ../building-your-dashboard/customizing-the-look-and-feel
 ---
 

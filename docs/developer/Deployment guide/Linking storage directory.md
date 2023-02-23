@@ -1,5 +1,6 @@
 ---
 sidebar_position: 5
+slug: ../deployment-guide/linking-storage-directory
 ---
 
 # Linking storage directory

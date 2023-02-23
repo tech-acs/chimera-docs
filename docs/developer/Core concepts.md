@@ -6,10 +6,10 @@ slug: /core-concepts
 # Core concepts
 
 
-## Questionnaires
-What we usually refer to as a questionnaire in the context of a dashboard is the source database, which usually originates from a census or survey questionnaire. In case of CSPro, each CAPI app or questionnaire will have its own database where the responses from the field are stored. 
+## Sources
+What we usually refer to as a source in the context of a dashboard is the data source, which usually originates from a census or survey questionnaire. In case of CSPro, each CAPI app or questionnaire will have its own database where the responses (cases) received from the field are stored. 
 
-We also use the questionnaire concept to store other related metadata such as the exercise start and end dates, exercise name etc. It is a crucial and core concept in our dashboard implementation.
+We also use the source concept to store other related metadata such as the exercise start and end dates, exercise name etc. It is a crucial and core concept in our dashboard implementation. It is also sometimes referred to as a questionnaire. In general, please consider source and questionnaire as interchangeable terms.
 
 ![Questionnaires](/img/developer/questionnaires.png)
 
@@ -40,4 +40,4 @@ A legend provides clarity for the data bins.
 ## Reports
 Reports are compiled tabular datasets presented as CSV or Excel file formats. They are automatically generated based on a set schedule and can also be automatically emailed to designated users of the dashboard.
 
-![Reports](https://via.placeholder.com/728x90.png?text=Reports)
+![Reports](/img/developer/reports.png)

@@ -1,5 +1,6 @@
 ---
 sidebar_position: 6
+slug: ../deployment-guide/production-checklist
 ---
 
 # Production checklist

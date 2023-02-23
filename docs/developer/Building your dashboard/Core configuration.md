@@ -11,20 +11,20 @@ The first thing you need to put in place are your core settings and configuratio
 
 These are:
 
-- Questionnaires/source databases setting
+- Sources/databases setting
 - Area hierarchy configuration
 - Areas importation
 - Reference values importation
 
-## Questionnaires/source databases
+## Sources/Questionnaires
 
-We refer to a data source as a questionnaire. While this might not always correspond to your situation, its origins are based in how CSPro operates. Your dashboard can indeed connect to and work with multiple data sources (databases) and your census/survey does not need to be using CSPro. Our dashboard works with any kind of data in any kind of database as long as Laravel has a driver for it.
+We refer to a data source as a source or questionnaire. While this might not always correspond to your situation, its origins are based in how CSPro operates. Your dashboard can indeed connect to and work with multiple data sources (databases) and your census/survey does not need to be using CSPro. Our dashboard works with any kind of data in any kind of database as long as Laravel has a driver for it.
 
-As you should already be logged in using a 'Manager/Administrator' type account, you can directly head to the 'Management' menu (see screenshot below) in your dashboard and start adding questionnaires.
+As you should already be logged in using a 'Manager/Administrator' type account, you can directly head to the 'Management' menu (see screenshot below) in your dashboard and start adding sources.
 
 ![Management menu](/img/developer/building-your-dashboard/management-menu.png)
 
-To create a questionnaire, you need to provide two sets of information. The first one deals with the census/survey exercise and the second one pertains to the database where the respective data is stored.
+To create a source, you need to provide two sets of information. The first one deals with the census/survey exercise and the second one pertains to the database where the respective data is stored.
 
 ![Management menu](/img/developer/building-your-dashboard/create-questionnaire.png)
 
@@ -89,7 +89,7 @@ You must make sure that your area codes in the csv or shapefiles match your code
 
 :::tip
 
-In case you have already imported your areas (EA Frame) via a csv file, you can then also import your shapefile to augument them with spatial data. Make sure the codes in the shapefiles match the ones you have already imported in the csv file.
+In case you have already imported your areas (EA Frame) via a csv file, you can then also import your shapefile to augment them with spatial data. Make sure the codes in the shapefiles match the ones you have already imported in the csv file.
 
 :::
 

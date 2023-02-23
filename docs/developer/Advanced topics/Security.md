@@ -1,5 +1,6 @@
 ---
 sidebar_position: 5
+slug: ../advanced-topics/security
 ---
 
 # Security

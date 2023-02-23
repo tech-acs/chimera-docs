@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+slug: ../deployment-guide/running-queue-workers
 ---
 
 # Running queue workers

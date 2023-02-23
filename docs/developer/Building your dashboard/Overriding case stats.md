@@ -1,9 +1,9 @@
 ---
-sidebar_position: 3
-slug: ../building-your-dashboard/creating-scorecards
+sidebar_position: 4
+slug: ../building-your-dashboard/overriding-case-stats
 ---
 
-# Creating scorecards
+# Overriding case stats
 Scorecards are meant to display very high level data that pertains to either an important indicator or a performance metric. They are helpful to management in decision making and problem solving.
 
 ## Make scorecard command
