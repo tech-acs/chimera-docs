@@ -93,6 +93,14 @@ In case you have already imported your areas (EA Frame) via a csv file, you can 
 
 :::
 
+:::info
+
+When trying to import a file, if you get an error message stating that the file must not be of size greater than 12MB, then you can override this default file size limit in the livewire.php config file.
+
+Just follow the instructions in the Laravel Livewire documentation [here](https://laravel-livewire.com/docs/2.x/file-uploads#global-validation)
+
+:::
+
 ## Reference value importation
 
 What we generally refer to as reference values are concepts such as 'expected values' and 'target values'. These are used for comparing your actual data against so that you have some frame of reference to better understand the data/indicator your are viewing.
