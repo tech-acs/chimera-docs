@@ -64,6 +64,10 @@ You have the option of importing the data from two file formats:
 
     ![Importing areas from shapefile](/img/developer/building-your-dashboard/importing-area-hierarchy-from-shapefile.png)
 
+:::caution
+Please make sure that the shapefile you are attempting to import has the EPSG:4326 - WGS 84 Coordinate Reference System (CRS).
+:::
+
 - **Spreadsheets (.csv)**
 
     You can also import your areas via a csv file but here you will not have the maps and therefore can not have map based indicators in you dashboard.
@@ -105,9 +109,9 @@ Just follow the instructions in the Laravel Livewire documentation [here](https:
 
 What we generally refer to as reference values are concepts such as 'expected values' and 'target values'. These are used for comparing your actual data against so that you have some frame of reference to better understand the data/indicator your are viewing.
 
-To import reference values, you will need to have the data in an Excel or CSV file and it needs to be at the lowest area hierarchy level (usually EA).
+To import reference values, you will need to have the data in a CSV file and it needs to be at the lowest area hierarchy level (usually EA).
 
-The file needs to have at least two columns. One for the code of your lowest area hierarchy and another for the value of the reference value you are importing. It is common to have multiple columns, each named by the reference value they represent, in the same spreadsheet.
+The file needs to have at least two columns. One for path (can be generated using the formula provided on the top of the form) of your lowest area hierarchy and another for the value of the reference value you are importing. It is common to have multiple columns, each named by the reference value they represent, in the same spreadsheet.
 
 ![Sample reference values CSV file](/img/developer/building-your-dashboard/reference-value-spreadsheet.png)
 

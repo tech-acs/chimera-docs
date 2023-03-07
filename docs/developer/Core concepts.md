@@ -25,7 +25,7 @@ Indicators usually are data elements that represent statistical data for a speci
 
 They also include metadata for the indicator such as a brief description, title and and extended text that is meant to aid in understanding what is depicted by the indicator.
 
-![Indicator](https://via.placeholder.com/728x90.png?text=Indicator)
+![Indicators](/img/developer/indicators.png)
 
 ## Pages
 A page is simply a grouping of indicators into a single web page that is accessed via the top navigation bar. The same indicator can be present in multiple pages and users can be granted access to pages or even to individual indicators.

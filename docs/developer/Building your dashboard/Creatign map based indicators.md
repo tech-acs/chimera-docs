@@ -14,11 +14,17 @@ The one and only way to create map-indicators is by running the `chimera:make-ma
 ## Implementing map-indicators
 Obviously, you will have to write some code in your generated map-indicator file so that it queries and returns the data that needs to be present on the map.
 
-You need to implement the getData() method and make sure it returns a Collection. You need to have at least these three keys on your collection.
+You need to implement the getData() method and make sure it returns a Collection. You need to have at least these two keys on your collection.
 
 - area_code
 - value
+
+Furthermore, if you include the following two, additional functionality will be unlocked accordingly.
+
+- display_value
 - info
+
+The text contained in the *display_value* column will replace the one from value on the map tooltip. And if *info* is present, its contents will be rendered in an information box, on the bottom right of the map when the owning area is clicked.
 
 The area_code column/key is used to match the corresponding area on the map. The value column is what is displayed for each area when you hover over it and finally, the info column should should hold the text that
 is displayed (in an info box to the side) when its respective area is clicked on the map.
@@ -27,6 +33,7 @@ If for whatever reason, you need to use other names for these three columns, you
 
 ```php
 public string $valueField = 'value';
+public string $displayValueField = 'display_value';
 public string $areaCodeField = 'area_code';
 public string $infoTextField = 'info';
 ```

@@ -12,10 +12,21 @@ Caching is not enabled by default and to enable it, you must set CACHE_ENABLED t
 Once caching is enabled, every published indicator, scorecard, case stat and map indicator will be cached for a set amount of time that is determined by the CACHE_TTL_SECONDS setting in your .env file. The default value of the caching time is **one hour**.
 
 You will most likely want to use your own caching strategy that is appropriate to your data size and other needs. You will therefore need to schedule tasks to update these caches regularly. This is achieved by using the ```chimera:cache``` group of commands. You can run them manually as such but you should schedule them using Laravel's scheduled tasks. Data cached using any of the cache commands does not expire. It is cached *"forever"* as cache replacement strategy is relinquished to the developer and should be achieved through a well thought out scheduling of the cache commands.
+
+For details, please refer to the [Task Scheduling](https://laravel.com/docs/9.x/scheduling#scheduling-artisan-commands) section of the Laravel documentation.
+
+```php
+$schedule->command('chimera:cache --questionnaire=enumeration')->everySixHours();
+```
+
+Basically, you add the above type of code to the schedule() method of your ```App\Console\Kernel``` class file for each of your cache commands.
+
+
 ```
 php artisan chimera:cache-indicators
 php artisan chimera:cache-scorecards
 php artisan chimera:cache-mapindicators
+php artisan chimera:cache-casestats
 ```
 
 ### chimera:cache-indicators
@@ -59,14 +70,12 @@ The command has two options which you can include to control how caching happens
 - *questionnaire* : this option can be used to update the cache of scorecards that belong to that specific questionnaire. By default, scorecards across all questionnaires will be updated
 
 
-As it is not practical to update the cache manually on the command line, you will need to schedule the chimera:cache artisan command.
-For details, please refer to the [Task Scheduling](https://laravel.com/docs/9.x/scheduling#scheduling-artisan-commands) section of the Laravel documentation.
+### chimera:casestats
 
-Basically, you add the following type of code to the schedule() method of your ```App\Console\Kernel``` class file
+The command has one option which you can include to control how caching happens
 
-```php
-$schedule->command('chimera:cache --questionnaire=enumeration')->everySixHours();
-```
+- *questionnaire* : this option can be used to update the cache of CaseStats that belong to that specific questionnaire. By default, casestats across all questionnaires will be updated
+
 
 ## Cache clearing
 

@@ -12,10 +12,10 @@ We strongly recommend that you develop and deploy the dashboard on a computer ru
 And as a web server, Nginx.
 
 ## Dependencies
-- Php 8.0 (8.1 preferred)
+- Php 8.1
 - [Composer](https://getcomposer.org/)
 - Various php extensions such as,
-     - BCMath PHP Extension
+    - BCMath PHP Extension
     - Ctype PHP Extension
     - cURL PHP Extension
     - DOM PHP Extension
@@ -25,6 +25,7 @@ And as a web server, Nginx.
     - OpenSSL PHP Extension
     - PCRE PHP Extension
     - PDO PHP Extension
+    - Redis PHP Extension
     - Tokenizer PHP Extension
     - XML PHP Extension
     - Internationalization extension (Intl) 

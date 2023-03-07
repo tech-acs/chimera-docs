@@ -4,36 +4,14 @@ slug: ../building-your-dashboard/overriding-case-stats
 ---
 
 # Overriding case stats
-Scorecards are meant to display very high level data that pertains to either an important indicator or a performance metric. They are helpful to management in decision making and problem solving.
+CaseStats are high level statistics about the number and type of cases/responses you have in your database. They can be classified as *completed, partial and duplicate*.
 
-## Make scorecard command
-The one and only way to create scorecards is by running the `chimera:make-scorecard` command.
+This classification is bound up with how responses are stored in CSPro and might not necessarily be the way you want to summarize the responses in your database. 
 
-Scorecards usually display just two things: title and value but can also include a delta display (to show percentage of change from a reference value) and a link button to jump to an indicator, if it exists.
+You can override this default, CSPro based, implementation and provide your own kind of CaseStats. To do so, just create a new Livewire component and make sure you include the words CaseStats in the name.
 
-![Scorecards](/img/developer/building-your-dashboard/scorecards.png)
+You then need to extend the existing CaseStats class and then override either just the getData() method, where you can implement your own counting strategy or also override the render() method to also provide your own blade view to render.
 
-## Implementing scorecards
-Obviously, you will have to write some code in your generated scorecard file so that it distils and returns a value you intend.
+Once you have implemented your new CaseStats component, it should become available for selection under the Source edit form for each source/questionnaire.
 
-You have a high degree of freedom on how you choose to code your scorecard as long as, at the end, you set the appropriate public class properties with their desired values.
-
-- $this->title
-
-    title is by default inherited from what you had provided when you created the scorecard. You can also edit this from the management menu.
-
-- $this->bgColor
-
-    the scorecard background color is dictated by the currently chosen theme but you are free to override and set your own desired color using HTML color constants or hex color values.
-
-- $this->diff
-
-    by default, this is set to 0 but you can set it to any integer (signed) value to depict the delta between the main value and some reference value.
-
-- $this->unit
-
-    by default, this is set to % and is shown as a unit for your delta (diff). You can override it to be any other unit or you can also set it to be an empty string.
-
-- $this->value
-
-    by default, this is set to the string value 'NA' but you are expected to set it to the value you want displayed on the scorecard. You will probably have to run some database queries to calculate that value.
+When overriding either of these two methods, please make sure you return the results in the expected format. You can refer to the existing CaseStats component for that.
