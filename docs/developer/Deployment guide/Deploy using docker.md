@@ -5,7 +5,7 @@ slug: ../deployment-guide/deploy-using-docker
 
 # Deploy using docker
 
-The starter kit provides a Docker environment for your dashboard. Other than Docker, no software or libraries are required to be installed on your machine. After chimera package has been installed, you may run the chimera:dockerize artisan command. This command will publish a docker-compose.yml file and runtime config files to the root of your application
+The starter kit provides a Docker environment for your dashboard.After chimera package has been installed, you may run the chimera:dockerize artisan command. This command will publish a docker-compose.yml file and runtime config files to the root of your application. After generating the docker files, the dashboard can be deployed on docker, during deployment no software or libraries are required to be installed on the environment.
 
 ```bash
 php artisan chimera:dockerize
