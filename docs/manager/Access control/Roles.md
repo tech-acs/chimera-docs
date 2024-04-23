@@ -50,7 +50,7 @@ The steps to do so are as follows:
 
 Page level permissions allow you to control who can access what pages in the dashboard. The steps to assign page level permissions are as follows:
 
-1. Go to the Roles edit [following the steps above](#assigning-permissions-to-roles)
+1. Go to the Roles edit
 2. Find the page you want to assign permissions to and click on the show page button
 3. Click on the 'Save' button to save the permissions
 
@@ -58,7 +58,7 @@ Page level permissions allow you to control who can access what pages in the das
 
 Indicator level permissions allow you to control who can access what indicators in the dashboard. Indicators are grouped by pages. The steps to assign indicator level permissions are as follows:
 
-1. Go to the Roles edit [following the steps above](#assigning-permissions-to-roles)
+1. Go to the Roles edit
 2. Find the indicator you want to assign permissions to and click on the icon to the right of the indicator name to assign permissions
 3. Click on the 'Save' button to save the permissions
 

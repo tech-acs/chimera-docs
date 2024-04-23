@@ -31,7 +31,7 @@ You also need to set up the mail server details if you have access to the Intern
 - MAIL_PASSWORD=null
 - MAIL_ENCRYPTION=null
 - MAIL_FROM_ADDRESS="hello@example.com"
-- MAIL_FROM_NAME="${APP_NAME}"
+- MAIL_FROM_NAME=""
 
 ### Dashboard features
 The following are other environment variables you can set to affect various aspects of the dashboard. 
