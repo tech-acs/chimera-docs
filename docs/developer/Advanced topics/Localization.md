@@ -7,7 +7,7 @@ slug: ../advanced-topics/localization
 
 Everything in the dashboard can be localized to any language. This includes the interface language and the data. 
 
-Localizing the interface happens through language files. You can read more about it in the Laravel documentation.
+Localizing the interface happens through language files. You can read more about it in the Laravel documentation. As of now, we provide English, French and Portuguese languages.
 
 Localizing data can be done right from the Management section of the dashboard. All localizable fields are displayed in a special input field
 which looks like the following.

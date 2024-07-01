@@ -20,7 +20,7 @@ composer create-project laravel/laravel my-dashboard
 ```
 :::
 
-Once you have created the project, you may use composer to install the starter kit into your new Laravel project:
+Once you have created the project, you may use composer to install the latest version of the starter kit into your new Laravel project:
 
 ```
 composer require uneca/dashboard-starter-kit
@@ -62,19 +62,7 @@ Once you have edited your .env file, you are now ready to run the database migra
 php artisan migrate
 ```
 
-Next, you need to install and build all your frontend assets (using Vite):
-
-```
-npm install
-
-# Run the Vite development server...
-npm run dev
- 
-# Build and version the assets for production...
-npm run build
-```
-
-At this point, you are ready to start your server, whatever that may be (artisan serve command, nginx, WAMP, IIS, etc) and navigate to the web address where you will see the landing page
+At this point, you are ready to start your server, whatever that may be (artisan serve command, nginx, WAMP, IIS, etc.) and navigate to the web address where you will see the landing page
 
 The quickest way would be to run the built-in artisan web server like so,
 
@@ -85,9 +73,8 @@ Assuming everything goes well, you should be able to navigate to *http://localho
 
 ![Landing page](/img/developer/landing.png)
 
-Finally you can run the adminify command to create a _Dashboard Manager_ account with which you can access your new dashboard.
+Finally, you can run the adminify command to create a _Dashboard Manager_ account with which you can access your new dashboard.
 
 ```
 php artisan adminify
 ```
-

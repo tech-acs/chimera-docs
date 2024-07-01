@@ -11,24 +11,34 @@ The first thing you need to put in place are your core settings and configuratio
 
 These are:
 
-- Sources/databases setting
+- Data source setting
 - Area hierarchy configuration
 - Areas importation
 - Reference values importation
 
-## Sources/Questionnaires
+## Data sources/questionnaires
 
-We refer to a data source as a source or questionnaire. While this might not always correspond to your situation, its origins are based in how CSPro operates. Your dashboard can indeed connect to and work with multiple data sources (databases) and your census/survey does not need to be using CSPro. Our dashboard works with any kind of data in any kind of database as long as Laravel has a driver for it.
+Your dashboard can connect to and work with multiple data sources (databases) and your census/survey does not need to be using CSPro. Our dashboard works with any kind of data in any kind of database as long as Laravel has a driver for it.
 
-As you should already be logged in using a 'Manager/Administrator' type account, you can directly head to the 'Management' menu (see screenshot below) in your dashboard and start adding sources.
+Out-of-the-box, we support MySQL, MariaDB, Microsoft SQL, PostgreSQL and SQLite databases as data sources.
+
+As you should already be logged in using a 'Manager/Super Admin' type account, you can directly head to the 'Management' menu (see screenshot below) in your dashboard and start adding data sources.
 
 ![Management menu](/img/developer/building-your-dashboard/management-menu.png)
 
-To create a source, you need to provide two sets of information. The first one deals with the census/survey exercise and the second one pertains to the database where the respective data is stored.
+To create a data source, you need to provide two sets of information. The first one deals with the census/survey exercise and the second one pertains to the database where the respective data is stored.
 
 ![Management menu](/img/developer/building-your-dashboard/create-questionnaire.png)
 
-## Area hierarchy
+:::info
+To be able to set/apply the core configurations, you need to enable _developer_ mode &#128736;
+
+Developer mode can only be enabled if you are logged in using a _Super Admin_ account. To enable it, go to the user profile page and tap/click seven times in the small blank area just above the first horizontal divider.
+
+Once enabled, it will stay so only for the current logged-in session and can also be manually disabled after you are done applying the desired core configurations.
+:::
+
+## Area hierarchy &#128736;
 
 What we refer to as area hierarchy is the administrative division (administrative unit, country subdivision, administrative region, subnational entity, etc.) you choose to employ in your census/survey exercise.
 
@@ -38,17 +48,17 @@ These are usually the mandate of one branch of the government and are either ado
 
 > Source Wikipedia article: [Administrative division](https://en.wikipedia.org/wiki/Administrative_division)
 
-You need to be in *development mode* to be able to create your area hierarchy.
-
 Go to the 'Area Hierarchy' menu item under the management dropdown menu.
 
-You should see an 'Add' button as long as you are in development mode, otherwise, you will only see a list of area names you have already added or an empty table.
+You should see an 'Add' button as long as you are in development mode, otherwise, you will only see a list of area hierarchies you have already added or an empty table.
+
+(You need to have *developer mode* enabled to be able to create your area hierarchy. If developer mode is not enabled, you will not see the 'Add' button.)
 
 Please note that the order of appearance of the area entries is important. It signifies hierarchy.
 
 ![Management menu](/img/developer/building-your-dashboard/area-hierarchy.png)
 
-## Area importation
+## Area importation &#128736;
 
 Once you define your area hierarchy, the next step is to actually import your areas into the system so that it can be used for filtering various indicators, creating maps, etc.
 
@@ -101,11 +111,11 @@ In case you have already imported your areas (EA Frame) via a csv file, you can 
 
 When trying to import a file, if you get an error message stating that the file must not be of size greater than 12MB, then you can override this default file size limit in the livewire.php config file.
 
-Just follow the instructions in the Laravel Livewire documentation [here](https://laravel-livewire.com/docs/2.x/file-uploads#global-validation)
+Just follow the instructions in the Laravel Livewire documentation [here](https://livewire.laravel.com/docs/uploads#global-validation)
 
 :::
 
-## Reference value importation
+## Reference value importation &#128736;
 
 What we generally refer to as reference values are concepts such as 'expected values' and 'target values'. These are used for comparing your actual data against so that you have some frame of reference to better understand the data/indicator your are viewing.
 

@@ -5,7 +5,7 @@ slug: ../getting-started/next-steps
 
 # Next steps
 
-Hopefully, your installation has gone well. Which means the next thing you need to do is start building our your dashboard.
+Hopefully, your installation has gone well. Which means the next thing you need to do is start building out your dashboard.
 
 Please navigate to the url where your dashboard is being hosted. You should see a welcome/landing page that looks something like the following
 

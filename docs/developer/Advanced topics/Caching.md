@@ -7,16 +7,14 @@ slug: ../advanced-topics/caching
 
 The Dashboard Starter Kit comes with a complete caching strategy built-in.
 
-Caching is not enabled by default and to enable it, you must set CACHE_ENABLED to *true* in your .env file as documented in the [Configuration](/docs/developer/getting-started/configuration#dashboard-features) section.
-
-Once caching is enabled, every published indicator, scorecard, case stat and map indicator will be cached for a set amount of time that is determined by the CACHE_TTL_SECONDS setting in your .env file. The default value of the caching time is **one hour**.
+Caching of results is always happening behind the scenes. Every published indicator, scorecard, case stat and map indicator will be cached for a set amount of time that is determined by the CACHE_TTL_SECONDS setting in your .env file. The default value of the caching time is **thirty minutes**.
 
 You will most likely want to use your own caching strategy that is appropriate to your data size and other needs. You will therefore need to schedule tasks to update these caches regularly. This is achieved by using the ```chimera:cache``` group of commands. You can run them manually as such but you should schedule them using Laravel's scheduled tasks. Data cached using any of the cache commands does not expire. It is cached *"forever"* as cache replacement strategy is relinquished to the developer and should be achieved through a well thought out scheduling of the cache commands.
 
 For details, please refer to the [Task Scheduling](https://laravel.com/docs/9.x/scheduling#scheduling-artisan-commands) section of the Laravel documentation.
 
 ```php
-$schedule->command('chimera:cache --questionnaire=enumeration')->everySixHours();
+$schedule->command('chimera:cache --data-source=enumeration')->everySixHours();
 ```
 
 Basically, you add the above type of code to the schedule() method of your ```App\Console\Kernel``` class file for each of your cache commands.
@@ -35,7 +33,7 @@ The command has three options which you can use to control how caching happens
 
 - *max-level* : this option, when passed, will control the level depth of caching that will occur for indicators. By default, only national and first area levels will be cached. Accepts a number between 1 and the total number of area hierarchies you have
 
-- *questionnaire* : this option can be used to update the cache of indicators that belong to that specific questionnaire. By default, indicators across all questionnaires will be updated
+- *data-source* : this option can be used to update the cache of indicators that belong to that specific data source. By default, indicators across all data sources will be updated
 
 - *tag* : this option, when passed, will specifically target indicators that have been assigned the given tag, excluding all other untagged indicators
 
@@ -43,7 +41,7 @@ Example: the first command would update all indicators (published and untagged),
 
 ```
 php artisan chimera:cache-indicators
-php artisan chimera:cache-indicators --questionnaire=enumeration
+php artisan chimera:cache-indicators --data-source=enumeration
 php artisan chimera:cache-indicators --tag=priority
 ```
 
@@ -53,8 +51,7 @@ You can manage the tag list by editing the tags key under the cache chimera conf
 Example (in file config\chimera.php):
 ```php
 'cache' => [
-    'enabled' => env('CACHE_ENABLED', false),
-    'ttl' => env('CACHE_TTL_SECONDS', 60 * 60),
+    'ttl' => env('CACHE_TTL_SECONDS', 60 * 30),
     'tags' => ['priority', 'secondary'],
 ],
 ```
@@ -67,21 +64,21 @@ do not want to target specifically.
 
 The command has two options which you can include to control how caching happens
 
-- *questionnaire* : this option can be used to update the cache of scorecards that belong to that specific questionnaire. By default, scorecards across all questionnaires will be updated
+- *data-source* : this option can be used to update the cache of scorecards that belong to that specific questionnaire. By default, scorecards across all questionnaires will be updated
 
 
 ### chimera:casestats
 
 The command has one option which you can include to control how caching happens
 
-- *questionnaire* : this option can be used to update the cache of CaseStats that belong to that specific questionnaire. By default, casestats across all questionnaires will be updated
+- *data-source* : this option can be used to update the cache of CaseStats that belong to that specific questionnaire. By default, casestats across all questionnaires will be updated
 
 
 ## Cache clearing
 
 If, for some reason, you need to clear cached data, you can use the ```chimera:cache-clear``` command. It has two options
 
-- *questionnaire* : this option can be used to clear the cache of all items stored under the given questionnaire
+- *data-source* : this option can be used to clear the cache of all items stored under the given questionnaire
 
 - *type* : this option can be used to clear specific types of cached data. Possible values for this option are: *indicators, scorecards, casestats or mapindicators*
 

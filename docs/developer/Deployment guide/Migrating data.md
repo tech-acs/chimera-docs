@@ -19,6 +19,9 @@ You can check this file into git so that it becomes available on your production
 And on your production server, you can run the following command to import the data you have exported on your development server. If it encounters data 
 that has already been inserted, it will be ignored.
 
+To learn about all the options this command offers, you can run it with the --help option which will display an exhaustive list of all available options and their meanings.
+
+
 ```
 php artisan chimera:data-import
 ```

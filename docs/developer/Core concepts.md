@@ -6,17 +6,19 @@ slug: /core-concepts
 # Core concepts
 
 
-## Sources
-What we usually refer to as a source in the context of a dashboard is the data source, which usually originates from a census or survey questionnaire. In case of CSPro, each CAPI app or questionnaire will have its own database where the responses (cases) received from the field are stored. 
+## Data sources
+What we usually refer to as a data source in the context of this app is the database, which usually originates from a census or survey questionnaire. In case of CSPro, each CAPI app or questionnaire will have its own database where the interviews (cases) received from the field are stored. 
 
-We also use the source concept to store other related metadata such as the exercise start and end dates, exercise name etc. It is a crucial and core concept in our dashboard implementation. It is also sometimes referred to as a questionnaire. In general, please consider source and questionnaire as interchangeable terms.
+We also use the data source concept to store other related metadata such as the exercise start and end dates, exercise name etc. It is a crucial and core concept in our dashboard implementation. It is also sometimes referred to as a questionnaire. In general, please consider data source and questionnaire as interchangeable terms.
 
 ![Questionnaires](/img/developer/questionnaires.png)
 
 ## Summary cards
-Summary cards are what we use to display the high level status of a questionnaire or field data collection exercise (census/survey). They are displayed on the home page and show various high level stats such as total number of cases collected, the exercise start and end dates etc.
+Summary cards are what we use to display the high level status of a data source or field data collection exercise (census/survey). They are displayed on the home page and show various high level stats such as total number of interviews collected, the exercise start and end dates etc.
 
-Each summary card can also contain various scorecards that display stats from within the data itself and you can have multiple summary cards on the home page.
+Each summary card can also contain various scorecards that display stats from within the data itself, and you can have multiple summary cards on the home page.
+
+The summary cards can also contain featured indicators. These are normal indicators that have been selected to be displayed here because of their perceived importance.
 
 ![Summary cards](/img/developer/summary-card.png)
 

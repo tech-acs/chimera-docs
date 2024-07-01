@@ -6,7 +6,7 @@ const lightTheme = themes.github;
 const darkTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
-const config = {
+export default {
   title: 'Dashboard Starter Kit',
   tagline: 'For census and surveys, large and small',
   url: 'https://your-docusaurus-test-site.com',
@@ -38,16 +38,25 @@ const config = {
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
           id: 'default',
           path: 'docs/user',
           routeBasePath: 'docs/user',
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
+          sidebarPath: './sidebars.js',
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/tech-acs/chimera-docs',
+          editUrl: 'https://github.com/tech-acs/chimera-docs',
+
+          versions: {
+            current: {
+              label: '4',
+            },
+            '2.x': {
+              label: '2.x',
+
+            }
+          },
+          lastVersion: 'current'
         },
         blog: {
           showReadingTime: true,
@@ -59,7 +68,7 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+      },
     ],
   ],
 
@@ -70,8 +79,7 @@ const config = {
         id: 'developer',
         path: 'docs/developer',
         routeBasePath: 'docs/developer',
-        sidebarPath: require.resolve('./sidebars.js'),
-        // ... other options
+        sidebarPath: './sidebars.js',
       },
     ],
     [
@@ -80,8 +88,7 @@ const config = {
         id: 'manager',
         path: 'docs/manager',
         routeBasePath: 'docs/manager',
-        sidebarPath: require.resolve('./sidebars.js'),
-        // ... other options
+        sidebarPath: './sidebars.js',
       },
     ],
   ],
@@ -105,7 +112,12 @@ const config = {
           {
             type: 'localeDropdown',
             position: 'right',
-          }
+          },
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+            label: '3.x',
+          },
         ],
       },
       footer: {
@@ -163,5 +175,3 @@ const config = {
       },
     }),
 };
-
-module.exports = config;

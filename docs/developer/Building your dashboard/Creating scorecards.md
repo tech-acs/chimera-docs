@@ -14,9 +14,13 @@ Scorecards usually display just two things: title and value but can also include
 ![Scorecards](/img/developer/building-your-dashboard/scorecards.png)
 
 ## Implementing scorecards
-Obviously, you will have to write some code in your generated scorecard file so that it distils and returns a value you intend.
+Obviously, you will have to write some code in your generated scorecard file so that it distills and returns a value you intend.
 
-You have a high degree of freedom on how you choose to code your scorecard as long as, at the end, you set the appropriate public class properties with their desired values.
+You have a high degree of freedom on how you choose to code your scorecard as long as, at the end, you set the appropriate public class properties with their desired values. You have to return a Laravel Collection from the getData public method containing two elements. The first one being the value to display and the second being the change in value (delta) compared to some reference. If you do not intend to use the delta, you can return null. The last line of your getData() method could look like the following:
+
+```php
+return collect([$displayValue, $delta]);
+```
 
 - $this->title
 

@@ -7,12 +7,12 @@ slug: ../getting-started/environment-setup
 
 
 ## Development OS
-We strongly recommend that you develop and deploy the dashboard on a computer running a linux operating system. Preferably, the latest LTS version of Ubuntu.
+We strongly recommend that you develop and deploy the dashboard on a computer running a linux operating system. Preferably, the latest LTS version of [Ubuntu](https://ubuntu.com/about/release-cycle).
 
 And as a web server, Nginx.
 
 ## Dependencies
-- Php 8.1
+- Php 8.2
 - [Composer](https://getcomposer.org/)
 - Various php extensions such as,
     - BCMath PHP Extension
@@ -29,4 +29,7 @@ And as a web server, Nginx.
     - Tokenizer PHP Extension
     - XML PHP Extension
     - Internationalization extension (Intl) 
+- On Ubuntu, the following command will install php and all required extensions
+
+  ```sudo apt install -y php8.3 php8.3-fpm php8.3-pgsql php8.3-zip php8.3-xml php8.3-intl php8.3-redis php8.3-sqlite3```
 - [PostgreSQL](https://www.postgresql.org/)

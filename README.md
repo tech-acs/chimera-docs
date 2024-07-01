@@ -31,6 +31,13 @@ To preview your changes as you edit the files, you can run a local development s
 npm run start
 ```
 
+To build and deploy
+
+```
+npm run build
+GIT_USER=username npm run deploy
+```
+
 ### Style guide
 
 To maintain the usability of the documentation, we have chosen to adopt [Google's developer documentation style guide

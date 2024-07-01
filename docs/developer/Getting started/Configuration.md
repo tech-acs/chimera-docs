@@ -34,18 +34,22 @@ You also need to set up the mail server details if you have access to the Intern
 - MAIL_FROM_NAME=""
 
 ### Dashboard features
-The following are other environment variables you can set to affect various aspects of the dashboard. 
+The following are other environment variables you can set to affect various aspects of the dashboard. You can also set this and the next item from the management menu on the web UI.
 - APP_OWNER_NAME=ECA
 
-    set this to the organization that owns the dashboard. Used in the footer displayed across all pages (default ECA)
+  set this to the organization that owns the dashboard. Used in the footer displayed across all pages (default ECA)
 
 - APP_OWNER_URL=#
 
-    set this to the URL (website) of the organization that owns the dashboard. Used in the footer displayed across all pages (default #)
+  set this to the URL (website) of the organization that owns the dashboard. Used in the footer displayed across all pages (default #)
 
+- CACHE_TTL_SECONDS=1800
+
+  set this to the number of seconds that you want database query results to be cached (default 60 * 30; thirty minutes)
+ 
 - APP_TIMEZONE=UTC
 
-    set this to the timezone of where the census/survey exercise is taking place (default UTC)
+    set this to the timezone of where the census/survey exercise is taking place (default UTC). You should only use valid timezones as per the php docs [here](https://www.php.net/manual/en/timezones.php)
 
 - SECURE=false
     
@@ -53,7 +57,7 @@ The following are other environment variables you can set to affect various aspe
 
 - INDICATORS_PER_PAGE=2
 
-    set this to an integer number which controls the number of indicators shown per page (default 2)
+    set this to an even integer number which controls the number of indicators shown per page (default 2)
 
 - EMAILING_ENABLED
 
@@ -61,7 +65,7 @@ The following are other environment variables you can set to affect various aspe
 
 - ENFORCE_2FA=false
     
-    set this to true to require users to enable and use two factor authentication (default false) 
+    set this to true to require users to enable and use two-factor authentication (default false) 
 
 - INVITATION_TTL_HOURS=72
     
@@ -83,17 +87,18 @@ The following are other environment variables you can set to affect various aspe
     
     set this to the longitude of the map which is first panned into view when map is loaded (default 38.763611)
 
-- IGNORE_ORPHAN_AREAS
+- MAP_STARTING_ZOOM=7
 
-    this relates to importing areas from shapefiles. In that process, areas in one level are automatically linked with areas in
-    the previous level by using spatial queries. If your shapefiles are not exact, it might happen that an area fails to find a
-    containing or parent area. In such cases, set the value of this constant to true to instruct the importer to ignore (and continue)
-    areas that are orphans (default false)
+  set this to the desired starting map zoom level. When navigating to the map page, this will be starting zoom level (default 7)
 
-- CACHE_ENABLED=false
-    
-    set this to true or false to enable data caching (default false)
+- MAP_MIN_ZOOM=6
 
-- CACHE_TTL_SECONDS=3600
+  set this to control the maximum level of zooming out the user can achieve (default 6)
 
-    set this to the number of seconds that you want database query results to be cached. This has effect only if CACHE_ENABLED is set to true (default 60 * 60)
+- LONG_QUERY_TIME=10
+
+  the app will time and record how long each query of the dashboard artefacts takes above the set minimum (default 10 seconds)
+
+- FEATURED_INDICATORS_PER_DATA_SOURCE=2
+
+  on the home page, for each of the data sources, you can select and feature a number of indicators. You can set how many using this variable (default 2)

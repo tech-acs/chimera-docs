@@ -5,9 +5,9 @@ slug: ../building-your-dashboard/creating-indicators
 
 # Creating indicators
 
-Now that you have your core configuration in place, you can start creating indicators. Indicator creation involves running a chimera command (interactive) on the command line and will result in the creation of files (component class) and addition of entries in to the database for created indicators, including permissions.
+Now that you have your core configuration in place, you can start creating indicators. Indicator creation involves running a chimera command (interactive) on the command line and will result in the creation of a file (component class) and addition of entries in to the database for created indicators, including permissions.
 
-The created indicator file will contain the basics of an indicator and it extends the base Chart class but will still require you two write some PHP code to implement your indicator fully.
+The created indicator file will contain the basics of an indicator, and it extends the base Chart class but will still require you two write some PHP code to implement your indicator fully.
 
 ## Make indicator command
 The one and only way to create indicators is by running the `chimera:make-indicator` command.
@@ -16,7 +16,7 @@ The command is interactive and allows you to control various aspects of the gene
 
 You can choose to have some working sample code included in the generated file so that you can immediately start seeing realistic looking indicators in your dashboard. 
 
-You can also choose to download and use indicator templates that have already been partially built out by us (and hopefully other contributors).
+You can also choose to use indicator templates that have already been partially built out by us (and hopefully other contributors or yourself using the chart builder tool we include).
 
 ```
 php artisan chimera:make-indicator
@@ -27,37 +27,16 @@ Please pay special attention when you provide a name for your indicator. It is w
 Please read the instructions and examples on the command line very carefully.
 :::
 
-For example, the following will result in the creation of a folder called Enumeration in the <span className='text--danger text--light'>app/Http/Livewire</span> directory and a file named *HouseholdsEnumerated.php* inside the Enumeration directory.
+For example, the following will result in the creation of a folder called Enumeration in the <span className='text--danger text--light'>app/Livewire</span> directory and a file named *HouseholdsEnumerated.php* inside the Enumeration directory.
 
 ![Make indicator command example](/img/developer/building-your-dashboard/make-indicator-command.png)
 
 ## Indicator templates
 Indicator templates are partial implementations of common indicators such as population pyramid, household size, sex ratio, etc.
 
-You can find more information about implemented indicators from the [chimera-indicator-templates](https://github.com/tech-acs/chimera-indicator-templates) github repository.
+We will likely include 'out-of-the-box' indicator templates with every installation of the starter kit. You can also 'save as template' any of the indicators you create via the chart designer tool and all templates will be available for use when using the make-indicator command as can be seen in the screenshot above.
 
-You can make use of them by first downloading them into your dashboard so that they become available for selection when you are running the chimera:make-indicator command
-
-```
-php artisan chimera:download-indicator-templates
-```
-
-Once you have generated your indicator file, you can then edit it in your IDE of choice. Coding indicators is a rather simple affair.
-The following are the three methods that you usually need to implement to have a functioning indicator. As they are all implemented in the base class, you can choose to override them and provide implementations for one or all of them.
-
-```
-getData(array $filter): Collection
-
-getTraces(Collection $data, array $filter): array
-
-getLayout(array $filter): array
-```
-
-getData() is expected to have your database query and must return an Eloquent Collection
-
-getTraces() uses the data returned by getData() and formulates the traces you intend to have in your indicator.
-
-getLayout() just like the other methods, getLayout() returns the default layout provided which you can receive, modify and return.
+What indicator templates give you is the chart design. You still have to implement the getData() method, which is what fetches and returns the data from the database.
 
 ## Deleting indicators
 Deleting indicators (including permissions and database entry) can be accomplished by using the generic chimera:delete command
@@ -73,14 +52,16 @@ There, you can edit indicator titles, descriptions, contextual help text and als
 
 You can also add the indicator to one or more of the pages you have already created. 
 
-The default state of indicators when they are created on the command line is to be in 'draft' mode. You can publish them so that they can become visible on the pages they are added to by using the status toggle button.
+The default state of indicators when they are created on the command line is to be in 'draft' mode. You can publish them so that they can become visible on the pages they are added to by using the status toggle button. 
+
+If you choose to, you can also feature any indicator on the home page under its respective data source summary section. Featured indicators are indicated in the management list by a trophy icon.
 
 ## Implementing generated indicators
-There are three possible versions your generated indicator file might be in.
+There are two possible versions your generated indicator file might have.
 
 - **Empty**
 
-If you choose not to use indicator templates and also opt out of the inclusion of sample code during the generation, you will end up with the following file. 
+If you choose opt out of the inclusion of working sample code during the generation, you will end up with the following file. 
 
 ```php
 <?php
@@ -91,7 +72,10 @@ use App\Http\Livewire\Chart;
 
 class BirthRate extends Chart
 {
-
+    public function getData(string $filterPath): Collection
+    {
+        // TODO: Implement getData() method.
+    }
 }
 
 ```
@@ -99,7 +83,7 @@ If you publish it and see the results on the destination page, you will see an e
 
 - **With sample code**
 
-If you choose to include sample code during the generation of the indicator, the resulting file will have three methods implemented (overriding the base class implementations) inside the class. 
+If you choose to include sample code during the generation of the indicator, the resulting file will have a fully implemented getData() methods inside the class. 
 
 If you previewed it, you would see something like the following
 
@@ -107,6 +91,14 @@ If you previewed it, you would see something like the following
 
 - **From a template**
 
-If you select an existing template during the generation of the indicator, the resulting file will have a "standard" implementation of the said indicator. In this scenario, you just need to replace the getData() method with your own implementation so that you are displaying actual data from your own questionnaire (data source).
+If you select an existing template during the generation of the indicator, the resulting file will be identical to the first (empty) case but will have the provided chart design added to the indicator's entry in the database.
 
-![Preview of indicator with sample code](/img/developer/building-your-dashboard/preview-of-indicator-from-template.png)
+:::info
+While the getData() method can be implemented in any way you want as long as you return a Laravel collection from it, you would be better served if you used the included BreakoutQueryBuilder class to do it. This powerful class provides various helpful methods such as:
+- lastlyAreaLeftJoinData()
+- lastlyAreaRightJoinData()
+- debugLog()
+- dump()
+
+All of which along with the SQL like methods such as select(), from() etc. help you to craft and dispatch a query that will return the data you desire to see. The best way to learn about it is to read the code.
+:::
