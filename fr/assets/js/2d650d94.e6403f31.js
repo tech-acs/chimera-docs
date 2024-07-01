@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkchimera_docs_use=self.webpackChunkchimera_docs_use||[]).push([[1941],{741:e=>{e.exports=JSON.parse('{"permalink":"/chimera-docs/fr/blog/tags/dashboard","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

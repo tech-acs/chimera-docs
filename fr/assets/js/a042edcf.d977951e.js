@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkchimera_docs_use=self.webpackChunkchimera_docs_use||[]).push([[5402],{4890:e=>{e.exports=JSON.parse('{"label":"uneca","permalink":"/chimera-docs/fr/blog/tags/uneca","allTagsPath":"/chimera-docs/fr/blog/tags","count":1,"unlisted":false}')}}]);

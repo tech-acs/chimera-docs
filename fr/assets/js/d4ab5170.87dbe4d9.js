@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkchimera_docs_use=self.webpackChunkchimera_docs_use||[]).push([[4115],{9776:s=>{s.exports=JSON.parse('{"label":"survey","permalink":"/chimera-docs/fr/blog/tags/survey","allTagsPath":"/chimera-docs/fr/blog/tags","count":1}')}}]);

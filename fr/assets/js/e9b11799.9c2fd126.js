@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkchimera_docs_use=self.webpackChunkchimera_docs_use||[]).push([[2544],{1874:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"developer"}')}}]);

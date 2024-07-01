@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkchimera_docs_use=self.webpackChunkchimera_docs_use||[]).push([[8158],{3262:s=>{s.exports=JSON.parse('{"label":"dashboard","permalink":"/chimera-docs/fr/blog/tags/dashboard","allTagsPath":"/chimera-docs/fr/blog/tags","count":1,"unlisted":false}')}}]);

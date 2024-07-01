@@ -9,12 +9,15 @@
     <icon>https://your-docusaurus-test-site.com/chimera-docs/fr/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Announcing the release of Dashboard-Starter-Kit]]></title>
-        <id>announcing-dashboard-starter-kit</id>
+        <id>https://your-docusaurus-test-site.com/chimera-docs/fr/blog/announcing-dashboard-starter-kit</id>
         <link href="https://your-docusaurus-test-site.com/chimera-docs/fr/blog/announcing-dashboard-starter-kit"/>
         <updated>2023-01-05T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Dashboard Starter Kit is a beautifully designed Laravel package that provides a good starting point for your next census or survey management dashboard.]]></summary>
-        <content type="html"><![CDATA[<p>Dashboard Starter Kit is a beautifully designed Laravel package that provides a good starting point for your next census or survey management dashboard.</p><p>It helps you monitor and visualize your census or survey exercises and empowers you to take action with data-driven insights.</p><p>Depending on your data source, it is easy enough for you to set up on your own. Just follow our richly illustrated documentation and you will surely be
-able to set it up in no time!</p><p>Best of all, it is completely FREE and open source.</p>]]></content>
+        <content type="html"><![CDATA[<p>Dashboard Starter Kit is a beautifully designed Laravel package that provides a good starting point for your next census or survey management dashboard.</p>
+<p>It helps you monitor and visualize your census or survey exercises and empowers you to take action with data-driven insights.</p>
+<p>Depending on your data source, it is easy enough for you to set up on your own. Just follow our richly illustrated documentation and you will surely be
+able to set it up in no time!</p>
+<p>Best of all, it is completely FREE and open source.</p>]]></content>
         <author>
             <name>Nahom</name>
         </author>
