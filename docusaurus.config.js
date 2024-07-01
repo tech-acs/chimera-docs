@@ -50,10 +50,6 @@ export default {
           versions: {
             current: {
               label: '4',
-            },
-            '2.x': {
-              label: '2.x',
-
             }
           },
           lastVersion: 'current'
@@ -112,12 +108,7 @@ export default {
           {
             type: 'localeDropdown',
             position: 'right',
-          },
-          {
-            type: 'docsVersionDropdown',
-            position: 'right',
-            label: '3.x',
-          },
+          }
         ],
       },
       footer: {
