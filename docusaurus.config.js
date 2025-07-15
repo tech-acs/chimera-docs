@@ -31,6 +31,9 @@ export default {
       en: {
         htmlLang: 'en-US',
       }
+      ,fr: {
+        htmlLang: 'fr-FR',
+      },
     }
   },
 
