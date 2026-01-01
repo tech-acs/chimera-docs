@@ -5,31 +5,30 @@ slug: ../building-your-dashboard/creating-indicators
 
 # Creating indicators
 
-Now that you have your core configuration in place, you can start creating indicators. Indicator creation involves running a chimera command (interactive) on the command line and will result in the creation of a file (component class) and addition of entries in to the database for created indicators, including permissions.
+Now that you have your core configuration in place, you can start creating indicators. Indicator creation involves either running a chimera command (interactive) on the command line or using a web form and will result in the creation of a file (component class) and addition of entries in to the database for created indicators, including permissions.
 
 The created indicator file will contain the basics of an indicator, and it extends the base Chart class but will still require you two write some PHP code to implement your indicator fully.
 
-## Make indicator command
-The one and only way to create indicators is by running the `chimera:make-indicator` command.
+The first way is by running the `php artisan chimera:make-indicator` command and following the various prompts. This works best when you are running a linux machine.
 
-The command is interactive and allows you to control various aspects of the generated file.
+The second way is by going to the Manage dashboard menu and selecting Indicators, then pressing the CREATE NEW button and filling out the form as required.
+
+Both methods allow you to control various aspects of the generated file.
 
 You can choose to have some working sample code included in the generated file so that you can immediately start seeing realistic looking indicators in your dashboard. 
 
 You can also choose to use indicator templates that have already been partially built out by us (and hopefully other contributors or yourself using the chart builder tool we include).
 
-```
-php artisan chimera:make-indicator
-```
-
 :::caution
 Please pay special attention when you provide a name for your indicator. It is what will became both the class and file name for you indicator and will create directories if you specify it.
-Please read the instructions and examples on the command line very carefully.
+When creating, please read the prompts and hints very carefully.
 :::
 
 For example, the following will result in the creation of a folder called Enumeration in the <span className='text--danger text--light'>app/Livewire</span> directory and a file named *HouseholdsEnumerated.php* inside the Enumeration directory.
 
 ![Make indicator command example](/img/developer/building-your-dashboard/make-indicator-command.png)
+
+![Indicator create form](/img/developer/building-your-dashboard/indicator-form.png)
 
 ## Indicator templates
 Indicator templates are partial implementations of common indicators such as population pyramid, household size, sex ratio, etc.

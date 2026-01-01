@@ -6,10 +6,15 @@ slug: ../building-your-dashboard/creating-map-based-indicators
 # Creating map based indicators
 
 # Creating map indicators
-Map indicators can be created in the same manner as chart indicators. Once you create, implement and publish them, they will be available on the Map page. The data will be displayed on top of a spatial map.
+Map indicators can be created in the same manner as chart indicators. Once you create, implement and publish them, they will be available on the various map pages that you can create and assign them to. The data will be displayed on top of a spatial map. The user will be able to select the base map during use.
 
-## Make-map-indicator command
-The one and only way to create map-indicators is by running the `chimera:make-map-indicator` command. The command will use the included stub and create the MapIndicator class file in the *app/MapIndicators* folder.
+There are two ways to create map indicators. A cli command and a web form.
+
+The first way is by running the `php artisan chimera:make-map-indicator` command and following the various prompts. This works best when you are running a linux machine.
+
+The second way is by going to the Manage dashboard menu and selecting Map indicators, then pressing the CREATE NEW button and filling out the form as required. The included stub is used to create the MapIndicator class file in the *app/MapIndicators* folder.
+
+Just like indicators, map-indicators can be organized into different pages. You can assign a map-indicator to appear on one or more pages. This can be acomplished via the edit form.
 
 ## Implementing map-indicators
 Obviously, you will have to write some code in your generated map-indicator file so that it queries and returns the data that needs to be present on the map.

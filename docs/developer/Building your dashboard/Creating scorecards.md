@@ -6,8 +6,11 @@ slug: ../building-your-dashboard/creating-scorecards
 # Creating scorecards
 Scorecards are meant to display very high level data that pertains to either an important indicator or a performance metric. They are helpful to management in decision making and problem solving.
 
-## Make scorecard command
-The one and only way to create scorecards is by running the `chimera:make-scorecard` command.
+There are two ways to create scorecards. A cli command and a web form.
+
+The first way is by running the `php artisan chimera:make-scorecard` command and following the various prompts. This works best when you are running a linux machine.
+
+The second way is by going to the Manage dashboard menu and selecting Scorecards, then pressing the CREATE NEW button and filling out the form as required.
 
 Scorecards usually display just two things: title and value but can also include a delta display (to show percentage of change from a reference value) and a link button to jump to an indicator, if it exists.
 

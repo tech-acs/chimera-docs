@@ -36,6 +36,8 @@ To be able to set/apply the core configurations, you need to enable _developer_ 
 Developer mode can only be enabled if you are logged in using a _Super Admin_ account. To enable it, go to the user profile page and tap/click seven times in the small blank area just above the first horizontal divider.
 
 Once enabled, it will stay so only for the current logged-in session and can also be manually disabled after you are done applying the desired core configurations.
+
+However, when you environment is set to local in .env, developer mode will automatically be enabled.
 :::
 
 ## Area hierarchy &#128736;

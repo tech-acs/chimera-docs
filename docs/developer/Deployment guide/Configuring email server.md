@@ -15,4 +15,6 @@ There are various emails that can be sent by the dashboard.
 
 To be able to send emails from the dashboard, you will need to have a mail server prepared.
 
-Configurations can be entered in the production .env file as described [here](/docs/developer/getting-started/configuration#mail)
+Configurations can be entered under the "Mail settings" of the "Settings" sub-menu of the Manage dashboard admin menu
+
+![Mail settings](/img/developer/deployment-guide/mail-setting.png)

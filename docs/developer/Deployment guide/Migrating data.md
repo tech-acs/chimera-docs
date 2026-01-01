@@ -13,18 +13,18 @@ to the production server.
 php artisan chimera:data-export
 ```
 
-Running the above command will generate a file named *data-export.sql*. It contains the relevant parts of your postgres database (some tables only).
-You can check this file into git so that it becomes available on your production server.
+Running the above command will prompt you to select which tables from among the relevant ones to include in the export of data. If it does not already exist, it will create a directory named data-export and save one file for each of the files you have selected. 
+You can check these file into git so that it becomes available on your production server.
 
-And on your production server, you can run the following command to import the data you have exported on your development server. If it encounters data 
+And on your production server, you can run the *data-import* command to import the data you have exported on your development server. If it encounters data 
 that has already been inserted, it will be ignored.
-
-To learn about all the options this command offers, you can run it with the --help option which will display an exhaustive list of all available options and their meanings.
 
 
 ```
 php artisan chimera:data-import
 ```
+
+As both of these commands are interactive, you will be fully in-control during the export and import process. 
 
 :::info
 
@@ -32,7 +32,7 @@ In order to use these two commands, you will need to have the *PostgreSQL Client
 
 chimera:data-export makes use of **pg_dump** and chimera:data-import uses **psql**
 
-On Ubuntu, you would install PostgresQL Client like so,
+On Ubuntu, you would install PostgreSQL Client like so,
 
 ```
 sudo apt install postgresql-client

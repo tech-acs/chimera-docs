@@ -1,9 +1,7 @@
 ---
 slug: announcing-dashboard-starter-kit
 title: Announcing the release of Dashboard-Starter-Kit
-authors:
-  name: Nahom
-  title: Dev Team
+authors: nahom
 tags: [dashboard, census, survey, uneca]
 ---
 
@@ -15,3 +13,5 @@ Depending on your data source, it is easy enough for you to set up on your own. 
 able to set it up in no time!
 
 Best of all, it is completely FREE and open source. 
+
+<!-- truncate -->

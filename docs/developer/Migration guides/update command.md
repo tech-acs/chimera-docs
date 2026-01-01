@@ -17,6 +17,7 @@ It has the following options, which you might use depending on what is recommend
 - --chimera-config : will re-publish the chimera.php config file to the config directory. This is needed in cases where we add a new configuration in the future
 - --migrations : will re-publish any new database migrations that might have been added to the kit since installation
 - --packages : will install any new composer packages that might have been added to the kit since installation
+- --action-classes : will copy available action classes form the package to the app/Actions directory
 - --jetstream-modifications : will re-publish customized Laravel Jetstream views and actions
 - --assets : will re-publish resources (js, css, stubs, tailwind.config.js and vite.config.js)
 - --color-palettes : re-publishes the color-palettes directory
