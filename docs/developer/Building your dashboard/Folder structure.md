@@ -12,7 +12,7 @@ To begin with, please read the [Directory Structure](https://laravel.com/docs/st
 While there are various directories, that help organize your application, we shall mainly be concerned with a few of them.
 These will be the directories where your generated dashboard files (such as indicators, etc.) will go into.
 
-- <span className='text--danger text--light'>app/Livewire</span> is the directory where all your indicator and scorecard files will be stored. Under it, you can have them organized into various thematic or data source based sub-directories (this is achieved by including folders in the names when using the various make commands).
+- <span className='text--danger text--light'>app/Livewire</span> is the directory where all your indicator, gauges and scorecard files will be stored. Under it, you can have them organized into various thematic or data source based sub-directories (this is achieved by including folders in the names when using the various make commands).
 
 - <span className='text--danger text--light'>app/Mail</span> holds all the Mailable classes which you can modify to affect the emails sent by the dashboard. The corresponding mail templates are stored in <span className='text--danger text--light'>resources/views/mail</span>
 

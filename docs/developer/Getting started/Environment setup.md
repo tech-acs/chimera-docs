@@ -9,7 +9,7 @@ slug: ../getting-started/environment-setup
 ## Development OS
 We strongly recommend that you develop and deploy the dashboard on a computer running a linux operating system. Preferably, the latest LTS version of [Ubuntu](https://ubuntu.com/about/release-cycle).
 
-And as a web server, Nginx.
+And as a web server, Nginx with php-fpm.
 
 ## Dependencies
 - Php 8.2 (or greater, including 8.5)

@@ -23,9 +23,11 @@ In addition, you should also set the following variables
 - QUEUE_CONNECTION=redis
 
 ### Mail
-You also need to set up the mail server details if you have access to the Internet from the dashboard and also intend to send emails (such as registration invitations, etc.)
+If you intend to send emails for registration invites, notifications, password recovery, etc, then you need to enable mail and also configure the mail server details.
 
-This is configured on the "Settings" page under the "Mail settings" section.
+This is configured on the "Settings" page under the "Mail settings" section. If mail is enabled, the dashboard will attempt to send all emails via the SMTP server you have configured. Otherwise, the MAIL_MAILER setting in your .env file will be used.
+
+Please make sure the SMTP server details you input are correct and tested to avoid errors in the dashboard operation.
 
 ### Dashboard features
 The following are other environment variables you can set to affect various aspects of the dashboard. Some of these are easily set from the "Settings" management menu on the web UI and the rest need to be set directly in the .env file
@@ -57,11 +59,15 @@ The following are other environment variables you can set to affect various aspe
 
 - MAP_STARTING_ZOOM=7
 
-  set this to the desired starting map zoom level. When navigating to the map page, this will be starting zoom level (default 7)
+    set this to the desired starting map zoom level. When navigating to the map page, this will be starting zoom level (default 7)
 
 - FEATURED_INDICATORS_PER_DATA_SOURCE=2
 
-  on the home page, for each of the data sources, you can select and feature a number of indicators. You can set how many using this variable (default 2)
+    on the home page, for each of the data sources, you can select and feature a number of indicators. You can set how many using this variable (default 2)
+
+- MAIL_ENABLED
+
+    turn this on if you intend to send emails through the system (default false) and configure all the SMTP details
   
 <b>From .env file</b>
 - CACHE_TTL_SECONDS=1800
@@ -75,10 +81,6 @@ The following are other environment variables you can set to affect various aspe
 - SECURE=false
     
     set this to true or false depending on whether you have https enabled on your dashboard web server (default false)
-
-- EMAILING_ENABLED
-
-    set this to true if you intend to send emails through the system (default false)
 
 - ENFORCE_2FA=false
     

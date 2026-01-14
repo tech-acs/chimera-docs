@@ -1,11 +1,11 @@
 ---
-sidebar_position: 6
+sidebar_position: 9
 slug: ../building-your-dashboard/indicator-organization
 ---
 
-# Indicator organization
+# Artefact organization
 
-Indicators can be organized into logical sets called pages. Pages, if published will show up as menu item in the top navigation bar. You can add an indicator to multiple pages.
+Indicators, map indicators and reports can be organized into logical sets called pages. Pages, if published will show up on an intermediary page which can then be navigated to when selected. You can add the same artefact to multiple pages.
 
 ## Creating pages
 

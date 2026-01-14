@@ -43,3 +43,10 @@ A legend provides clarity for the data bins.
 Reports are compiled tabular datasets presented as Excel file formats. They are automatically generated based on a set schedule and can also be automatically emailed to designated users of the dashboard.
 
 ![Reports](/img/developer/reports.png)
+
+## Area Insights
+The Area Insights page is a dynamic, power tool designed to provide a comprehensive, yet highlevel snapshot of field operations and thematic indicators of geographic areas. It translates complex datasets into actionable intelligence through a combination of high-level grading gauges, scorecards and interactive visualizations.
+
+Utilize the filter bar to narrow data from a National overview down to specific areas, even EAs! The revamped filter bar now supports both drill-down and direct search-and-set modes which stay insync.
+
+![Area Insights](/img/developer/area-insights.png)
