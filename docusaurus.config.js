@@ -16,7 +16,7 @@ export default {
 
   markdown: {
     hooks: {
-      onBrokenMarkdownImages: 'throw',
+      onBrokenMarkdownImages: 'warn',
       onBrokenMarkdownLinks: 'warn',
     },
   },

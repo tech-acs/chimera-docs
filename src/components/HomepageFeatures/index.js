@@ -10,7 +10,7 @@ const FeatureList = [
     Svg: require('@site/static/img/users.svg').default,
     description: (
       <Translate description="homepage users section blurb">
-        Dashboard users can get started quickly as it was designed 
+        Dashboard users can get started quickly as it is designed
         with ease of use in mind.
       </Translate>
     ),
@@ -32,14 +32,14 @@ const FeatureList = [
     Svg: require('@site/static/img/developers.svg').default,
     description: (
       <Translate description="homepage developers section blurb">
-        Dashboard Starter Kit was designed to be easily installed and
-        used to make managing your census or survey easy.
+        Dashboard Starter Kit is designed to be easily installed and
+        used to make managing your census or survey effortless.
       </Translate>
     ),
   },
 ];
 
-function Feature({Svg, title, link, description}) {
+function Feature({ Svg, title, link, description }) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
