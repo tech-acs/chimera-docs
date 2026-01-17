@@ -1,7 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const {themes} = require('prism-react-renderer');
+const { themes } = require('prism-react-renderer');
 const lightTheme = themes.github;
 const darkTheme = themes.dracula;
 
@@ -16,8 +16,8 @@ export default {
 
   markdown: {
     hooks: {
-      onBrokenMarkdownImages: 'warn',
-      onBrokenMarkdownLinks: 'warn',
+      onBrokenMarkdownImages: 'throw',
+      onBrokenMarkdownLinks: 'throw',
     },
   },
 
@@ -37,7 +37,7 @@ export default {
       en: {
         htmlLang: 'en-US',
       }
-      ,fr: {
+      , fr: {
         htmlLang: 'fr-FR',
       },
     }
@@ -108,7 +108,7 @@ export default {
           src: 'img/logo.png',
         },
         items: [
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/tech-acs/chimera-starter-kit',
             label: 'GitHub',
@@ -128,15 +128,15 @@ export default {
             items: [
               {
                 label: 'Users',
-                to: '/docs/user/intro',
+                to: '/docs/user/Intro',
               },
               {
                 label: 'Managers',
-                to: '/docs/manager/intro',
+                to: '/docs/manager/Intro',
               },
               {
                 label: 'Developers',
-                to: '/docs/developer/intro',
+                to: '/docs/developer/Intro',
               },
             ],
           },

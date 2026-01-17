@@ -22,7 +22,8 @@ En outre, vous devez également définir les variables suivantes :
 - APP_NAME="Nom/titre préféré de votre tableau de bord"
 - QUEUE_CONNECTION=redis
 
-### Messagerie
+
+### Messagerie {#mail}
 Vous devez également configurer les détails du serveur de messagerie si vous avez accès à Internet depuis le tableau de bord et que vous souhaitez envoyer des e-mails (tels que des invitations à l'inscription, etc.) :
 - MAIL_MAILER=smtp
 - MAIL_HOST=mailhog
