@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkchimera_docs_use=globalThis.webpackChunkchimera_docs_use||[]).push([[8516],{171(a){a.exports=JSON.parse('{"authors":[{"name":"Nahom Tamerat","title":"Maintainer","url":"https://github.com/amestsantim","key":"nahom","page":null,"count":2}]}')}}]);

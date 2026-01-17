@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkchimera_docs_use=globalThis.webpackChunkchimera_docs_use||[]).push([[1903],{1912(s){s.exports=JSON.parse('{"blogBasePath":"/chimera-docs/fr/blog","blogTitle":"Blog","authorsListPath":"/chimera-docs/fr/blog/authors"}')}}]);

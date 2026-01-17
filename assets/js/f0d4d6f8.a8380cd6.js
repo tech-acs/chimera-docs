@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkchimera_docs_use=globalThis.webpackChunkchimera_docs_use||[]).push([[4325],{6279(e){e.exports=JSON.parse('{"metadata":{"permalink":"/chimera-docs/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

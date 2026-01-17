@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkchimera_docs_use=self.webpackChunkchimera_docs_use||[]).push([[8333],{7086:e=>{e.exports=JSON.parse('{"permalink":"/chimera-docs/fr/blog/tags/census","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

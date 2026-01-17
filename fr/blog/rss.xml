@@ -4,10 +4,25 @@
         <title>Dashboard Starter Kit Blog</title>
         <link>https://your-docusaurus-test-site.com/chimera-docs/fr/blog</link>
         <description>Dashboard Starter Kit Blog</description>
-        <lastBuildDate>Thu, 05 Jan 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 17 Jan 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>fr</language>
+        <item>
+            <title><![CDATA[Dashboard-Starter-Kit v5 is Here - Smarter Insights, Faster Navigation!]]></title>
+            <link>https://your-docusaurus-test-site.com/chimera-docs/fr/blog/announcing-dashboard-starter-kit-v5</link>
+            <guid>https://your-docusaurus-test-site.com/chimera-docs/fr/blog/announcing-dashboard-starter-kit-v5</guid>
+            <pubDate>Sat, 17 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[We're thrilled to announce the release of Dashboard-Starter-Kit v5, bringing a host of powerful new features designed to make your field monitoring more intuitive and efficient than ever before!]]></description>
+            <content:encoded><![CDATA[<p>We're thrilled to announce the release of Dashboard-Starter-Kit v5, bringing a host of powerful new features designed to make your field monitoring more intuitive and efficient than ever before!</p>
+<p>This major update introduces Area Insights, allowing you to dive deeper into regional data with enhanced summaries and context. Navigating large datasets just got a whole lot easier with Area Filtering by Direct Search, enabling you to pinpoint specific geographic areas instantly. We've also packed in numerous performance improvements and interface refinements to streamline your workflow.</p>
+<p>But that's not all! With the launch of v5, we're proud to confirm that our comprehensive documentation is now fully complete. Every feature, setting, and administrative function is now meticulously detailed, ensuring you have all the resources you need to harness the full power of the platform.</p>
+<p>Upgrade to v5 today and experience the next level of field monitoring!</p>]]></content:encoded>
+            <category>dashboard</category>
+            <category>census</category>
+            <category>survey</category>
+            <category>uneca</category>
+        </item>
         <item>
             <title><![CDATA[Announcing the release of Dashboard-Starter-Kit]]></title>
             <link>https://your-docusaurus-test-site.com/chimera-docs/fr/blog/announcing-dashboard-starter-kit</link>
