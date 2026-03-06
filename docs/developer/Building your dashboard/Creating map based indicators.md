@@ -5,7 +5,6 @@ slug: ../building-your-dashboard/creating-map-based-indicators
 
 # Creating map based indicators
 
-# Creating map indicators
 Map indicators can be created in the same manner as chart indicators. Once you create, implement and publish them, they will be available on the various map pages that you can create and assign them to. The data will be displayed on top of a spatial map. The user will be able to select the base map during use.
 
 There are two ways to create map indicators. A cli command and a web form.

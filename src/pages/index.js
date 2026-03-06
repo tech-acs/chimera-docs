@@ -17,7 +17,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="#">
+            to="https://datalab.uneca.org/kenya-demo/login" target="_blank">
             <Translate description="homepage intro button">
               Live demo
             </Translate>
